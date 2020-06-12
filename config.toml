@@ -1,0 +1,51 @@
+# The URL the site will be built for
+base_url = "https://example.com"
+
+title = "Gabelluardo"
+description = "Personal blog"
+default_language = "it"
+
+theme = "hermit_zola"
+
+compile_sass = true
+generate_feed = false
+build_search_index = false
+highlight_code = true
+# highlight_theme = "nord"
+
+taxonomies = [
+    {name = "tags", rss = false}
+]
+
+languages = [
+    {code = "en", rss = false}
+]
+
+[extra]
+# Prima devo capire ocme funziona e poi
+# posso attivarlo
+toc = false
+home_subtitle = "Robe a caso e altre cose a caso"
+
+# Footer automatico a fine di ogni post
+# per adesso lo tengo disabilitato
+# footer_copyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+hermit_menu = [
+    { link = "/posts", name = "Posts" },
+    { link = "/about", name = "About" },
+]
+
+hermit_social = [
+    { name = "twitter", link = "https://twitter.com/ugabbel" },
+    { name = "github", link = "https://github.com/gabelluardo" },
+    { name = "email", link = "gabriele.belluardo@outlook.it" }
+]
+
+[extra.author]
+name = "Gabelluardo"
+email = "gabriele.belluardo@outlook.it"
+
+[extra.google_analytics]
+enable = false
+id = "UA-4XXXXXXX-X"
