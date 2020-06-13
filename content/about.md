@@ -2,7 +2,7 @@
 title="About"
 
 [extra]
-remove_info=true
+remove_post_info=true
 +++
 
 Ciao, mi chiamo Gabriele, studio Ingegneria Informatica al Politecnico di Torino e sono membro del team [Policumbent](http://www.policumbent.it/) al reparto di Progettazione Elettronica e Software.
