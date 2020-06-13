@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://example.com"
+base_url = "https://gabelluardo.netlify.app"
 
 title = "Gabelluardo"
 description = "Personal blog"
@@ -25,7 +25,7 @@ languages = [
 # Prima devo capire ocme funziona e poi
 # posso attivarlo
 toc = false
-home_subtitle = "Robe a caso e altre cose a caso"
+home_subtitle = "Robe a caso e altre cose a casissimo"
 
 # Footer automatico a fine di ogni post
 # per adesso lo tengo disabilitato
