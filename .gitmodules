@@ -1,3 +1,4 @@
 [submodule "themes/hermit_zola"]
 	path = themes/hermit_zola
 	url = https://github.com/gabelluardo/hermit_zola
+  branch = custom
