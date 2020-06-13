@@ -22,10 +22,10 @@ languages = [
 ]
 
 [extra]
-# Prima devo capire ocme funziona e poi
+# Prima devo capire come funziona e poi
 # posso attivarlo
 toc = false
-generate_rss = true
+generate_rss = false
 home_subtitle = "Robe a caso e altre cose a casissimo"
 
 # Footer automatico a fine di ogni post
