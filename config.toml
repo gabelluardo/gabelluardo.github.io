@@ -45,5 +45,5 @@ name = "Gabelluardo"
 email = "gabriele.belluardo@outlook.it"
 
 [extra.google_analytics]
-enable = false
-id = "UA-4XXXXXXX-X"
+enable = true
+id = "UA-169315751-1"
