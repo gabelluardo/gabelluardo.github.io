@@ -5,6 +5,9 @@ draft=false
 
 [taxonomies]
 tags=["example"]
+
+[extra]
+toc = true
 +++
 
 ## An Code example with PrismJS

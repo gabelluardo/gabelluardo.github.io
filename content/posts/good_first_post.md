@@ -5,6 +5,9 @@ draft=false
 
 [taxonomies]
 tags=["hello", "blog", "first"]
+
+[extra]
+toc = true
 +++
 
 So i went there and did all that but as you know:

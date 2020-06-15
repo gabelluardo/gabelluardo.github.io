@@ -5,6 +5,9 @@ draft=false
 
 [taxonomies]
 tags=["hello", "blog", "example"]
+
+[extra]
+toc = true
 +++
 
 # H1

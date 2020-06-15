@@ -22,9 +22,6 @@ languages = [
 ]
 
 [extra]
-# Prima devo capire come funziona e poi
-# posso attivarlo
-toc = false
 generate_rss = false
 home_subtitle = "Robe a caso e altre cose a casissimo"
 
