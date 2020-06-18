@@ -1,13 +1,9 @@
-# [WIP] Personal blog
+# Personal Tech Blog
 
-### For cloning
-```
-git clone --recurse-submodules https://github.com/gabelluardo/blog
-```
-
-### For dev
+## Usage
 
 ```
+git clone https://github.com/gabelluardo/blog && cd blog/
 zola serve
 ```
 
