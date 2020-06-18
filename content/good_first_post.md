@@ -5,9 +5,6 @@ draft=false
 
 [taxonomies]
 tags=["hello", "blog", "first"]
-
-[extra]
-toc = true
 +++
 
 So i went there and did all that but as you know:
@@ -15,18 +12,19 @@ So i went there and did all that but as you know:
 * This as well...
 * And not to mention this one
 
+<!-- more  -->
 
 So i did those other things but:
 1. The first thing
 2. And the second thing
 3. But the third was the `best`
-
 And then the guy said:
 > Man, i'm not gonna be the part of the system
 
 And showed me this:
 
 <img src="https://dummyimage.com/640x4:3/">
+
 
 
 I said factorial this...
@@ -51,3 +49,4 @@ Then i shouted
 ### Hello 
 
 #### Hello 
+

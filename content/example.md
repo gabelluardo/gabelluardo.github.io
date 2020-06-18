@@ -1,13 +1,10 @@
 +++
 title="Example"
-date=2019-11-22T22:12:03.284Z
+date=2019-11-22
 draft=false
 
 [taxonomies]
 tags=["hello", "blog", "example"]
-
-[extra]
-toc = true
 +++
 
 # H1
@@ -23,7 +20,7 @@ toc = true
 ###### H6
 
 Paragraph
-
+<!-- more -->
 ---
 
 > This is a quote

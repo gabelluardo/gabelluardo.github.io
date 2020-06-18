@@ -1,13 +1,10 @@
 +++
 title="Code Example"
-date=2019-11-23T22:12:03.284Z
+date=2019-11-23
 draft=false
 
 [taxonomies]
 tags=["example"]
-
-[extra]
-toc = true
 +++
 
 ## An Code example with PrismJS
@@ -17,6 +14,7 @@ Gatsby-Starter-Julia uses the Atom Editor Theme.
 ```js
 console.log('Hello World')
 ```
+<!-- more -->
 
 ## Default NodeJS server
 

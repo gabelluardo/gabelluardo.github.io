@@ -1,15 +1,13 @@
 +++
 title="About"
-
-[extra]
-remove_post_info = true
+path="about"
 +++
 
 Ciao, mi chiamo Gabriele, studio Ingegneria Informatica al Politecnico di Torino e sono membro del team [Policumbent](http://www.policumbent.it/) al reparto di Progettazione Elettronica e Software.
 
 ## Progetti
 
-- [MARTA](https://gabelluardo.github.io/marta-ui/)  
+- [MARTA](https://policumbent.github.io/marta-ui/)  
   Telemetria per i prototipi del team [Policumbent](http://www.policumbent.it/), realizzata con flask e socket.io
 - [Poliappelli](https://gitlab.com/gabelluardo/poliappelli)  
   Scraper CLI per estrarre le date degli appelli del Politecnico di Torino
