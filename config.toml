@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://gabelluardo.netlify.app"
+base_url = "https://gabelluardo.github.io"
 
 title = "Gabelluardo"
 default_language = "it"
