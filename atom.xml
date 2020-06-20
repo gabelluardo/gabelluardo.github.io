@@ -44,11 +44,9 @@
 &lt;h2 id=&quot;h2&quot;&gt;H2&lt;&#x2F;h2&gt;
 &lt;h3 id=&quot;h3&quot;&gt;H3&lt;&#x2F;h3&gt;
 &lt;h4 id=&quot;h4&quot;&gt;H4&lt;&#x2F;h4&gt;
-&lt;h5 id=&quot;h5&quot;&gt;H5&lt;&#x2F;h5&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h5 id=&quot;h5&quot;&gt;H5&lt;&#x2F;h5&gt;
 &lt;h6 id=&quot;h6&quot;&gt;H6&lt;&#x2F;h6&gt;
-&lt;p&gt;Paragraph&lt;&#x2F;p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
-&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;paragraph&quot;&gt;Paragraph&lt;&#x2F;h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;This is a quote&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
@@ -79,48 +77,6 @@ console&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;.&lt;&#x2F
 &lt;p&gt;Sit amet porttitor eget dolor morbi non arcu risus quis. Nisl rhoncus mattis rhoncus urna neque viverra justo nec. Facilisi cras fermentum odio eu. In ante metus dictum at tempor commodo ullamcorper a lacus. Nulla aliquet enim tortor at auctor. Mollis aliquam ut porttitor leo a diam sollicitudin. Risus viverra adipiscing at in tellus. Felis eget nunc lobortis mattis aliquam faucibus purus. Quisque sagittis purus sit amet volutpat. Mi in nulla posuere sollicitudin aliquam ultrices sagittis. Justo nec ultrices dui sapien. Nisl nisi scelerisque eu ultrices vitae. Id volutpat lacus laoreet non curabitur gravida. Nullam non nisi est sit amet facilisis magna etiam. Maecenas volutpat blandit aliquam etiam erat velit scelerisque. Dui vivamus arcu felis bibendum ut tristique et egestas quis. Morbi quis commodo odio aenean sed adipiscing diam donec adipiscing. Arcu felis bibendum ut tristique et egestas quis ipsum suspendisse. Cursus in hac habitasse platea dictumst quisque sagittis. Egestas quis ipsum suspendisse ultrices gravida dictum.&lt;&#x2F;p&gt;
 &lt;p&gt;Varius duis at consectetur lorem donec massa sapien. Fames ac turpis egestas sed tempus. Eu mi bibendum neque egestas congue. Suscipit adipiscing bibendum est ultricies integer quis auctor elit. Tincidunt vitae semper quis lectus nulla at volutpat diam. Neque gravida in fermentum et sollicitudin. Eget gravida cum sociis natoque penatibus et magnis dis parturient. Varius quam quisque id diam vel quam elementum. Imperdiet proin fermentum leo vel orci porta non. Porttitor leo a diam sollicitudin tempor. Elit scelerisque mauris pellentesque pulvinar. Cursus turpis massa tincidunt dui ut ornare. Leo vel fringilla est ullamcorper eget nulla facilisi. At auctor urna nunc id cursus metus aliquam eleifend.&lt;&#x2F;p&gt;
 &lt;p&gt;Tortor aliquam nulla facilisi cras fermentum odio eu feugiat pretium. Massa tempor nec feugiat nisl pretium fusce id. Id leo in vitae turpis massa sed elementum. A cras semper auctor neque. Diam quam nulla porttitor massa id neque aliquam vestibulum morbi. Rhoncus urna neque viverra justo nec ultrices. Nunc faucibus a pellentesque sit amet porttitor eget. Neque volutpat ac tincidunt vitae. Cursus mattis molestie a iaculis at. Semper risus in hendrerit gravida. Sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. Non arcu risus quis varius quam. Ultrices dui sapien eget mi proin sed libero enim sed. Platea dictumst quisque sagittis purus. Fringilla est ullamcorper eget nulla facilisi etiam dignissim.&lt;&#x2F;p&gt;
-</content>
-	</entry>
-	<entry xml:lang="it">
-		<title>This is a good first post</title>
-		<published>2019-08-23T00:00:00+00:00</published>
-		<updated>2019-08-23T00:00:00+00:00</updated>
-		<link href="https://gabelluardo.github.io/good-first-post/" type="text/html"/>
-		<id>https://gabelluardo.github.io/good-first-post/</id>
-		<content type="html">&lt;p&gt;So i went there and did all that but as you know:&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;This point was important &lt;&#x2F;li&gt;
-&lt;li&gt;This as well...&lt;&#x2F;li&gt;
-&lt;li&gt;And not to mention this one&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;!-- more  --&gt;
-&lt;p&gt;So i did those other things but:&lt;&#x2F;p&gt;
-&lt;ol&gt;
-&lt;li&gt;The first thing&lt;&#x2F;li&gt;
-&lt;li&gt;And the second thing&lt;&#x2F;li&gt;
-&lt;li&gt;But the third was the &lt;code&gt;best&lt;&#x2F;code&gt;
-And then the guy said:&lt;&#x2F;li&gt;
-&lt;&#x2F;ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Man, i&#x27;m not gonna be the part of the system&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
-&lt;p&gt;And showed me this:&lt;&#x2F;p&gt;
-&lt;img src=&quot;https:&#x2F;&#x2F;dummyimage.com&#x2F;640x4:3&#x2F;&quot;&gt;
-&lt;p&gt;I said factorial this...&lt;&#x2F;p&gt;
-&lt;pre style=&quot;background-color:#282c34;&quot;&gt;
-&lt;code&gt;&lt;span style=&quot;color:#c678dd;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#61afef;&quot;&gt;factorial&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#e06c75;&quot;&gt;n&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c678dd;&quot;&gt;u64&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;) -&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c678dd;&quot;&gt;u64 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;{
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c678dd;&quot;&gt;match&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; n {
-        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d19a66;&quot;&gt;0 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#56b6c2;&quot;&gt;=&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d19a66;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;,
-        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#56b6c2;&quot;&gt;_ =&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; n &lt;&#x2F;span&gt;&lt;span style=&quot;color:#56b6c2;&quot;&gt;* factorial&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;(n&lt;&#x2F;span&gt;&lt;span style=&quot;color:#56b6c2;&quot;&gt;-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d19a66;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;)
-    }
-}
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;Then i shouted&lt;&#x2F;p&gt;
-&lt;h1 id=&quot;hello&quot;&gt;Hello&lt;&#x2F;h1&gt;
-&lt;p&gt;... and the echo answered:&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;hello-1&quot;&gt;Hello&lt;&#x2F;h2&gt;
-&lt;h3 id=&quot;hello-2&quot;&gt;Hello&lt;&#x2F;h3&gt;
-&lt;h4 id=&quot;hello-3&quot;&gt;Hello&lt;&#x2F;h4&gt;
 </content>
 	</entry>
 </feed>
