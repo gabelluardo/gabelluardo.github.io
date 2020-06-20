@@ -14,13 +14,12 @@ tags=["hello", "blog", "example"]
 ### H3
 
 #### H4
-
+<!-- more -->
 ##### H5
 
 ###### H6
 
 Paragraph
-<!-- more -->
 ---
 
 > This is a quote

@@ -1,7 +1,7 @@
 +++
 title="This is a good first post"
 date=2019-08-23
-draft=false
+draft=true
 
 [taxonomies]
 tags=["hello", "blog", "first"]
@@ -11,8 +11,6 @@ So i went there and did all that but as you know:
 * This point was important 
 * This as well...
 * And not to mention this one
-
-<!-- more  -->
 
 So i did those other things but:
 1. The first thing
@@ -24,8 +22,6 @@ And then the guy said:
 And showed me this:
 
 <img src="https://dummyimage.com/640x4:3/">
-
-
 
 I said factorial this...
 
