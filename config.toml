@@ -14,7 +14,7 @@ highlight_code = true
 highlight_theme = "nyx-bold"
 
 taxonomies = [
-    {name = "tags"},
+    {name = "tags", rss = true},
 ]
 
 [extra]
