@@ -8,10 +8,10 @@ theme = "terminimal"
 
 compile_sass = true
 generate_feed = true
+feed_filename = "rss.xml"
 
 highlight_code = true
 highlight_theme = "nyx-bold"
-
 
 taxonomies = [
     {name = "tags"},

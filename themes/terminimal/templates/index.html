@@ -107,6 +107,7 @@
                     <span class="copyright-theme">
                         <span class="copyright-theme-sep">:: </span>
                         {{ config.extra.footer_copyright | safe }}
+                        {{ post_macros::feed(visible=config.generate_feed) }}
                     </span>
                 </div>
             {% endif %}
