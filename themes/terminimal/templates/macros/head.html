@@ -24,8 +24,11 @@
     <link rel="stylesheet" href="{{ get_url(path="font-hack-subset.css", trailing_slash=false) | safe }}">
 {% endif %}
 
-<!-- Analytics and trakers -->
+<!-- Fira support -->
+<link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@4/distr/fira_code.css">
 
+<!-- Analytics and trakers -->
 {% if config.extra.matomo.enable %}
   <!-- Matomo -->
   <script type="text/javascript">
