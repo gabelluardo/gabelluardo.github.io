@@ -7,9 +7,9 @@ draft=false
 tags=["example"]
 +++
 
-## An Code example with PrismJS
+## Code example
 
-Gatsby-Starter-Julia uses the Atom Editor Theme.
+Javascript example code.
 
 ```js
 console.log('Hello World')
