@@ -26,26 +26,17 @@
 
 <!-- Analytics and trakers -->
 
-  <!-- Matomo -->
-  <script type="text/javascript">
-    var _paq = window._paq || [];
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-    _paq.push(["setCookieDomain", "*.betanolo.netlify.app"]);
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
 
-    (function() {
-      var u = "//gbsrv.duckdns.org/matomo/";
-      _paq.push(['setTrackerUrl', u + 'matomo.php']);
-      _paq.push(['setSiteId', '2']);
-      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-      g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
-    })();
+
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169315751-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-169315751-2');
   </script>
-  <!-- End Matomo Code -->
-
-
+  <!-- End Google Analytics Code -->
 
 
 
@@ -233,8 +224,8 @@
         
     
         <div class="post-content">
-            <p>Ho iniziato a studiare <a href="https://www.rust-lang.org/it">Rust</a> a tempo perso qualche mese fa, tra un esame e l'altro,
-è oggettivamente un linguaggio difficile da usare e senza un IDE o dei plug-in 
+            <p>Ho iniziato a studiare <a href="https://www.rust-lang.org/it">Rust</a> a tempo perso qualche mese fa, tra un esame e l'altro.
+È oggettivamente un linguaggio difficile da usare e senza un IDE o dei plug-in 
 per l'editor può diventare un incubo anche scrivere programmi basilari.</p>
 <span id="continue-reading"></span>
 <p>Piuttosto che Rust avrebbero dovuto chiamarlo Doom...</p>
@@ -252,7 +243,7 @@ Il grosso del lavoro è quindi procurarsi le credenziali da sviluppatore di <a h
   </span><span style="color:#e06c75;">└──</span><span style="color:#abb2bf;"> src
       </span><span style="color:#e06c75;">└──</span><span style="color:#abb2bf;"> main.rs
 </span></code></pre>
-<p>Sempre con spirito di intraprendenza ho voluto sperimentare anche <a href="https://tokio.rs">tokio</a>: un runtime per programmazione asincrona, praticamente lo standard de facto in Rust dall'introduzione dell'async/await di qualche anno fa. Per impostarlo basta aggiungerlo come dipendenza in <code>Cargo.toml</code> e usare le macro a disposizione:</p>
+<p>Sempre con spirito di intraprendenza, ho voluto sperimentare anche <a href="https://tokio.rs">tokio</a>: un runtime per programmazione asincrona, praticamente lo standard de facto in Rust dall'introduzione dell'async/await di qualche anno fa. Per impostarlo basta aggiungerlo come dipendenza in <code>Cargo.toml</code> e usare le macro a disposizione:</p>
 <pre style="background-color:#282c34;">
 <code><span style="color:#abb2bf;">[dependencies.tokio]
  </span><span style="color:#e06c75;">version </span><span style="color:#abb2bf;">= </span><span style="color:#98c379;">&quot;0.2&quot;
@@ -289,11 +280,11 @@ Il grosso del lavoro è quindi procurarsi le credenziali da sviluppatore di <a h
 #[</span><span style="color:#e06c75;">tokio</span><span style="color:#abb2bf;">::</span><span style="color:#e06c75;">main</span><span style="color:#abb2bf;">]
 async </span><span style="color:#c678dd;">fn </span><span style="color:#61afef;">main</span><span style="color:#abb2bf;">() -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {}
 </span></code></pre>
-<p>Un'altra funzione comoda di Rust è <code>loop</code> che fornisce di defalut un ciclo infinito in cui possiamo:</p>
+<p>Un'altra funzione comoda di Rust è <code>loop</code>, che fornisce di defalut un ciclo infinito in cui possiamo:</p>
 <ol>
 <li>ricavare le informazioni dell'ultimo post del blog</li>
 <li>ricavare la data dell'ultimo tweet del nostro account</li>
-<li>controllare che il post sia più recente dell'ultimo tweet, quindi pubblicarlo.</li>
+<li>controllare che il post sia più recente dell'ultimo tweet, quindi pubblicarlo</li>
 <li>sleep per x secondi prima di ripetere il ciclo</li>
 </ol>
 <pre style="background-color:#282c34;">
