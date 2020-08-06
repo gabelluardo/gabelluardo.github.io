@@ -230,7 +230,7 @@ per l'editor può diventare un incubo anche scrivere programmi basilari.</p>
 <span id="continue-reading"></span>
 <p>Piuttosto che Rust avrebbero dovuto chiamarlo Doom...</p>
 <img class="media" src="https://media.giphy.com/media/1xNApQKoX1uW2vhVE9/giphy.gif">
-<p>Squallore a parte, dopo aver letto molteplici libri e guide e dopo essere stato seviziato dal compilatore innumerevoli volte, ho deciso di sperimentare un po' con un'applicazione di reale utilità: mi serviva un bot twittasse in automatico ogni volta che veniva pubblicato un nuovo blog post.</p>
+<p>Squallore a parte, dopo aver letto molteplici libri e guide e dopo essere stato seviziato dal compilatore innumerevoli volte, ho deciso di sperimentare un po' con un'applicazione di reale utilità: mi serviva un bot che twittasse in automatico ogni volta che veniva pubblicato un nuovo blog post.</p>
 <p>Niente di troppo difficile: esiste già un ottimo <a href="https://github.com/egg-mode-rs/egg-mode">crate</a> per le api di twitter e un altro per il parsing del <a href="https://github.com/rust-syndication/rss">feed rss</a>.<br />
 Il grosso del lavoro è quindi procurarsi le credenziali da sviluppatore di <a href="https://developer.twitter.com">twitter</a> e salvarle come variabili d'ambiente in un file <code>.env</code>, che ci serviranno per generare il token per accedere alle api di twitter.</p>
 <p>Dato che con Rust ci viene fornito anche il comodissimo <a href="https://github.com/rust-lang/cargo">cargo</a> che si occupa della struttura, della compilazione e della pubblicazione su <a href="https://crates.io">crate.io</a> del progetto, quello che otteniamo lanciando <code>cargo new twitter-bot</code> è questo:</p>
