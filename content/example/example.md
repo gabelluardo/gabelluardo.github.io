@@ -1,7 +1,7 @@
 +++
 title="Example"
 date=2019-11-22
-draft=false
+draft=true
 
 [taxonomies]
 tags=["hello", "blog", "example"]
