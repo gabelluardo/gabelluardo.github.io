@@ -10,22 +10,33 @@
         <loc>https://gabelluardo.github.io/archive/</loc>
     </url>
     <url>
+        <loc>https://gabelluardo.github.io/code-example/</loc>
+        <lastmod>2019-11-23</lastmod>
+    </url>
+    <url>
+        <loc>https://gabelluardo.github.io/example/</loc>
+        <lastmod>2019-11-22</lastmod>
+    </url>
+    <url>
+        <loc>https://gabelluardo.github.io/later-posts/</loc>
+        <lastmod>2019-08-25</lastmod>
+    </url>
+    <url>
         <loc>https://gabelluardo.github.io/page/1/</loc>
     </url>
     <url>
         <loc>https://gabelluardo.github.io/tags/</loc>
     </url>
     <url>
-        <loc>https://gabelluardo.github.io/tags/bot/</loc>
+        <loc>https://gabelluardo.github.io/tags/blog/</loc>
     </url>
     <url>
-        <loc>https://gabelluardo.github.io/tags/rust/</loc>
+        <loc>https://gabelluardo.github.io/tags/example/</loc>
     </url>
     <url>
-        <loc>https://gabelluardo.github.io/tags/twitter/</loc>
+        <loc>https://gabelluardo.github.io/tags/hello/</loc>
     </url>
     <url>
-        <loc>https://gabelluardo.github.io/twitter-bot/</loc>
-        <lastmod>2020-08-06</lastmod>
+        <loc>https://gabelluardo.github.io/tags/later/</loc>
     </url>
 </urlset>
