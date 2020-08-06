@@ -99,7 +99,7 @@ loop {
 
 Penso che le parti interessanti siano su per giù queste, il repository completo è comunque su [github][9]
 
-<img class="media" src="/ferris.gif">
+<img class="media" src="/assets/ferris.gif">
 
 
 [1]: https://www.rust-lang.org/it
