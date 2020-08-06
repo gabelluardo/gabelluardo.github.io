@@ -6,8 +6,8 @@ date=2020-08-06
 tags=["twitter", "bot", "rust", "async", "tokio"]
 +++
 
-Ho iniziato a studiare [Rust][1] a tempo perso qualche mese fa, tra un esame e l'altro,
-è oggettivamente un linguaggio difficile da usare e senza un IDE o dei plug-in 
+Ho iniziato a studiare [Rust][1] a tempo perso qualche mese fa, tra un esame e l'altro.
+È oggettivamente un linguaggio difficile da usare e senza un IDE o dei plug-in 
 per l'editor può diventare un incubo anche scrivere programmi basilari.
 <!-- more -->
 Piuttosto che Rust avrebbero dovuto chiamarlo Doom...
@@ -31,7 +31,7 @@ twitter-bot
       └── main.rs
 ```
 
-Sempre con spirito di intraprendenza ho voluto sperimentare anche [tokio][7]: un runtime per programmazione asincrona, praticamente lo standard de facto in Rust dall'introduzione dell'async/await di qualche anno fa. Per impostarlo basta aggiungerlo come dipendenza in `Cargo.toml` e usare le macro a disposizione:
+Sempre con spirito di intraprendenza, ho voluto sperimentare anche [tokio][7]: un runtime per programmazione asincrona, praticamente lo standard de facto in Rust dall'introduzione dell'async/await di qualche anno fa. Per impostarlo basta aggiungerlo come dipendenza in `Cargo.toml` e usare le macro a disposizione:
 
 ```toml
 [dependencies.tokio]
@@ -78,10 +78,10 @@ use std::result::Result;
 async fn main() -> Result<(), Box<dyn Error>> {}
 ```
 
-Un'altra funzione comoda di Rust è `loop` che fornisce di defalut un ciclo infinito in cui possiamo:
+Un'altra funzione comoda di Rust è `loop`, che fornisce di defalut un ciclo infinito in cui possiamo:
 1. ricavare le informazioni dell'ultimo post del blog
 2. ricavare la data dell'ultimo tweet del nostro account
-3. controllare che il post sia più recente dell'ultimo tweet, quindi pubblicarlo.
+3. controllare che il post sia più recente dell'ultimo tweet, quindi pubblicarlo
 4. sleep per x secondi prima di ripetere il ciclo
 
 ```rust 
