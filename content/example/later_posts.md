@@ -1,7 +1,7 @@
 +++
 title="Latest Post"
 date=2019-08-25
-draft=false
+draft=true
 
 [taxonomies]
 tags=["hello", "blog", "later"]

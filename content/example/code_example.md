@@ -1,7 +1,7 @@
 +++
 title="Code Example"
 date=2019-11-23
-draft=false
+draft=true
 
 [taxonomies]
 tags=["example"]
