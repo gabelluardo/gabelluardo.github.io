@@ -14,7 +14,7 @@ Piuttosto che Rust avrebbero dovuto chiamarlo Doom...
 
 <img class="media" src="https://media.giphy.com/media/1xNApQKoX1uW2vhVE9/giphy.gif">
 
-Squallore a parte, dopo aver letto molteplici libri e guide e dopo essere stato seviziato dal compilatore innumerevoli volte, ho deciso di sperimentare un po' con un'applicazione di reale utilità: mi serviva un bot twittasse in automatico ogni volta che veniva pubblicato un nuovo blog post.
+Squallore a parte, dopo aver letto molteplici libri e guide e dopo essere stato seviziato dal compilatore innumerevoli volte, ho deciso di sperimentare un po' con un'applicazione di reale utilità: mi serviva un bot che twittasse in automatico ogni volta che veniva pubblicato un nuovo blog post.
 
 Niente di troppo difficile: esiste già un ottimo [crate][2] per le api di twitter e un altro per il parsing del [feed rss][3].  
 Il grosso del lavoro è quindi procurarsi le credenziali da sviluppatore di [twitter][4] e salvarle come variabili d'ambiente in un file `.env`, che ci serviranno per generare il token per accedere alle api di twitter.
