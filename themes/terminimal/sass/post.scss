@@ -2,6 +2,7 @@
 
 .posts {
   margin: 0 auto;
+  min-width: 86%;
 }
 
 .post {
@@ -107,7 +108,7 @@
     justify-content: center;
     margin-bottom: 10px;
 
-    &+ h2 {
+    &+h2 {
       margin-top: -10px;
       margin-bottom: 20px;
     }
