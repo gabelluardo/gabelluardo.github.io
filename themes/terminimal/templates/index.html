@@ -15,6 +15,7 @@
     {% endif %}
 
     {% if config.extra.favicon %}
+        <link rel="apple-touch-icon" sizes="180x180" href="{{get_url(path="apple-touch-icon.png")}}" />
         <link rel="shortcut icon" type="{{ config.extra.favicon_mimetype | default(value="image/x-icon") }}" href="{{ config.extra.favicon | safe }}">
     {% endif %}
 
