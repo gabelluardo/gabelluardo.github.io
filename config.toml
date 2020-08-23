@@ -76,7 +76,7 @@ favicon_mimetype = "image/png"
 
 
 [extra.matomo]
-enable = true
+enable = false
 url = "gbsrv.duckdns.org/matomo"
 id = 4
 
