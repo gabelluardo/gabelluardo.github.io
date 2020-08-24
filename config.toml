@@ -85,6 +85,6 @@ enable = true
 code = "gabelluardo"
 
 [extra.google_analytics]
-enable = true
+enable = false
 id = "UA-169315751-2"
 
