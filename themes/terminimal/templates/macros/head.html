@@ -55,14 +55,13 @@
   gtag('config', '{{ config.extra.google_analytics.id }}');
 </script>
 <!-- End Google Analytics Code -->
-{% endif%}
-
+{% endif %}
 
 {% if config.extra.goatcounter.enable %}
 <!-- Goatcounter -->
 <script data-goatcounter="https://{{ config.extra.goatcounter.code }}.goatcounter.com/count" async
   src="//gc.zgo.at/count.js"></script>
 <!-- End Goatcounter Code -->
-{% endif%}
+{% endif %}
 
 {% endmacro head %}
