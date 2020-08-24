@@ -80,6 +80,10 @@ enable = false
 url = "gbsrv.duckdns.org/matomo"
 id = 4
 
+[extra.goatcounter]
+enable = true
+code = "gabelluardo"
+
 
 [extra.google_analytics]
 enable = true
