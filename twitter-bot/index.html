@@ -232,7 +232,7 @@ per l'editor può diventare un incubo anche scrivere programmi basilari.</p>
 <img class="media" src="https://media.giphy.com/media/1xNApQKoX1uW2vhVE9/giphy.gif">
 <p>Squallore a parte, dopo aver letto molteplici libri e guide e dopo essere stato seviziato dal compilatore innumerevoli volte, ho deciso di sperimentare un po' con un'applicazione di reale utilità: mi serviva un bot che twittasse in automatico ogni volta che veniva pubblicato un nuovo blog post.</p>
 <p>Niente di troppo difficile: esiste già un ottimo <a href="https://github.com/egg-mode-rs/egg-mode">crate</a> per le api di twitter e un altro per il parsing del <a href="https://github.com/rust-syndication/rss">feed rss</a>.<br />
-Il grosso del lavoro è quindi procurarsi le credenziali da sviluppatore di <a href="https://developer.twitter.com">twitter</a> e salvarle come variabili d'ambiente in un file <code>.env</code>, che ci serviranno per generare il token per accedere alle api di twitter.</p>
+Il grosso del lavoro è quindi procurarsi le credenziali da sviluppatore di <a href="https://developer.twitter.com">twitter</a> e salvarle come variabili d'ambiente in un file <code>.env</code> , che ci serviranno per generare il token per accedere alle api di twitter.</p>
 <p>Dato che con Rust ci viene fornito anche il comodissimo <a href="https://github.com/rust-lang/cargo">cargo</a> che si occupa della struttura, della compilazione e della pubblicazione su <a href="https://crates.io">crate.io</a> del progetto, quello che otteniamo lanciando <code>cargo new twitter-bot</code> è questo:</p>
 <pre style="background-color:#282c34;">
 <code><span style="color:#e06c75;">twitter-bot
@@ -253,7 +253,7 @@ Il grosso del lavoro è quindi procurarsi le credenziali da sviluppatore di <a h
 <pre style="background-color:#282c34;">
 <code><span style="color:#e06c75;">tokio </span><span style="color:#abb2bf;">= {</span><span style="color:#e06c75;">version </span><span style="color:#abb2bf;">= </span><span style="color:#98c379;">&quot;0.2&quot;</span><span style="color:#abb2bf;">, </span><span style="color:#e06c75;">features </span><span style="color:#abb2bf;">= [</span><span style="color:#98c379;">&quot;macros&quot;</span><span style="color:#abb2bf;">]}
 </span></code></pre>
-<p>Nel main in <code>main.rs</code>, che useremo come entry point:</p>
+<p>Nel main in <code>main.rs</code> , che useremo come entry point:</p>
 <pre style="background-color:#282c34;">
 <code><span style="color:#abb2bf;">#[</span><span style="color:#e06c75;">tokio</span><span style="color:#abb2bf;">::</span><span style="color:#e06c75;">main</span><span style="color:#abb2bf;">]
  async </span><span style="color:#c678dd;">fn </span><span style="color:#61afef;">main</span><span style="color:#abb2bf;">() {}
@@ -272,15 +272,16 @@ Il grosso del lavoro è quindi procurarsi le credenziali da sviluppatore di <a h
   Err(e) </span><span style="color:#56b6c2;">=&gt; </span><span style="color:#c678dd;">return </span><span style="color:#abb2bf;">Err(e),
 }
 </span></code></pre>
-<p>Non c'è nemmeno bisogno di dire quale sia la più leggibile, però bisogna ricordarsi che per propagare gli errori si deve usare l'enum generico <code>Result&lt;T, E&gt;</code>, quindi il main deve essere leggermente modificato: </p>
+<p>Non c'è nemmeno bisogno di dire quale sia la più leggibile, però bisogna ricordarsi che per propagare gli errori si deve usare l'enum generico <code>Result&lt;T, E&gt;</code> , quindi il main deve essere leggermente modificato: </p>
 <pre style="background-color:#282c34;">
-<code><span style="color:#c678dd;">use </span><span style="color:#abb2bf;">std::error::Error;
-</span><span style="color:#c678dd;">use </span><span style="color:#abb2bf;">std::result::Result;
+<code><span style="color:#c678dd;">use </span><span style="color:#abb2bf;">std::error:: Error; 
+</span><span style="color:#c678dd;">use </span><span style="color:#abb2bf;">std::result:: Result; 
 
 #[</span><span style="color:#e06c75;">tokio</span><span style="color:#abb2bf;">::</span><span style="color:#e06c75;">main</span><span style="color:#abb2bf;">]
 async </span><span style="color:#c678dd;">fn </span><span style="color:#61afef;">main</span><span style="color:#abb2bf;">() -&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {}
+
 </span></code></pre>
-<p>Un'altra funzione comoda di Rust è <code>loop</code>, che fornisce di defalut un ciclo infinito in cui possiamo:</p>
+<p>Un'altra funzione comoda di Rust è <code>loop</code> , che fornisce di defalut un ciclo infinito in cui possiamo:</p>
 <ol>
 <li>ricavare le informazioni dell'ultimo post del blog</li>
 <li>ricavare la data dell'ultimo tweet del nostro account</li>
