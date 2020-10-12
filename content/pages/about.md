@@ -3,12 +3,14 @@ title="About"
 path="about"
 +++
 
-Ciao, mi chiamo Gabriele, studio Ingegneria Informatica al Politecnico di Torino e sono membro del team [Policumbent][] al reparto di Progettazione Elettronica e Software.
+Ciao, mi chiamo Gabriele, studio Ingegneria del Software al Politecnico di Torino e sono membro del team [Policumbent][] al reparto di Strumentazione Elettronica.
 
 ## Progetti
 
 - [MARTA][1]  
-  Telemetria per i prototipi del team [Policumbent][], realizzata con flask e socket.io
+  Telemetria per i prototipi del team [Policumbent][]
+- [ALICE][]  
+  Live dashboard pubblica per seguire le run del team [Policumbent][]
 - [poliappelli][2]  
   CLI basata su [Selenium][] per estrarre le date degli appelli del Politecnico di Torino
 - [pyxbee][3]  
@@ -19,14 +21,14 @@ Ciao, mi chiamo Gabriele, studio Ingegneria Informatica al Politecnico di Torino
   Bot che twitta in automatico ogni volta che viene pubblicato un nuovo blog post
 
 
-[1]:https://policumbent.github.io/marta-ui
-[2]:https://gitlab.com/gabelluardo/poliappelli
-[3]:https://github.com/gabelluardo/pyxbee 
+[1]: https://policumbent.github.io/marta-ui
+[2]: https://gitlab.com/gabelluardo/poliappelli
+[3]: https://github.com/gabelluardo/pyxbee 
 [4]: https://github.com/gabelluardo/anime-dl
 [5]: https://github.com/gabelluardo/twitter-bot
 
 
-
+[alice]: https://github.com/policumbent/alice
 [policumbent]: http://www.policumbent.it
 [selenium]: https://www.selenium.dev
 [digi-xbee]: https://github.com/digidotcom/xbee-python

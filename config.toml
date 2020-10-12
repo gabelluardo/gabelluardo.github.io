@@ -6,7 +6,6 @@ default_language = "it"
 
 theme = "terminimal"
 
-compile_sass = true
 generate_feed = true
 feed_filename = "rss.xml"
 
