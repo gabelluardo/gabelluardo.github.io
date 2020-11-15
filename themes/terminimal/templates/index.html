@@ -46,7 +46,9 @@
             </div>
         </div>
 
-        {{ menu_macros::menu(config=config, current_path=current_path) }}
+        {% if current_path %}
+          {{ menu_macros::menu(config=config, current_path=current_path) }}
+        {% endif %}
     </header>
     {% endblock header %}
 

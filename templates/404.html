@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+
+{% set css = load_data(path="404.css") %}
+<style>{{ css | safe}}</style>
+
+{% block content %}
+  <div class="post">
+    <div class="error-404">
+      <h1 class="post-title"> 404 &#8212; Pagina non trovata</h1>
+    </div>
+  </div>
+{% endblock content %}
