@@ -7,23 +7,23 @@ Ciao, mi chiamo Gabriele, studio Ingegneria del Software al Politecnico di Torin
 
 ## Progetti
 
-* [MARTA][1]  
+* [MARTA][1]
 
   Telemetria per i prototipi del team [Policumbent][]
 
-* [ALICE][]  
+* [ALICE][]
 
   Live dashboard pubblica per seguire le run del team [Policumbent][]
 
-* [pyxbee][3]  
+* [pyxbee][3]
 
   Libreria python per le antenne xbee e MARTA, basata su [digi-xbee][]
 
-* [anime-dl][4]  
+* [anime-dl][4]
 
   CLI per download di serie anime, ha funzioni di scraping per noti archivi web e streaming via [vlc][]
 
-* [twitter-bot][5]  
+* [twitter-bot][5]
 
   Bot che twitta in automatico ogni volta che viene pubblicato un nuovo blog post
 
