@@ -10,7 +10,8 @@ compile_sass = true
 generate_feed = true
 feed_filename = "rss.xml"
 
-minify_html = true
+# TODO: minify break highlight code
+# minify_html = true
 
 languages = [
   { code = "en", rss = true }
