@@ -237,7 +237,7 @@ per l'editor può diventare un incubo anche scrivere programmi basilari.</p>
 Il grosso del lavoro è quindi procurarsi le credenziali da sviluppatore di <a href="https://developer.twitter.com">twitter</a> e salvarle come variabili d'ambiente in un file <code>.env</code> , che ci serviranno per generare il token per accedere alle api di twitter.</p>
 <p>Dato che con Rust ci viene fornito anche il comodissimo <a href="https://github.com/rust-lang/cargo">cargo</a> che si occupa della struttura, della compilazione e della pubblicazione su <a href="https://crates.io">crate.io</a> del progetto, quello che otteniamo lanciando <code>cargo new twitter-bot</code> è questo:</p>
 <pre style="background-color:#282c34;">
-<code><span style="color:#e06c75;">twitter-bot
+<code class="language-sh" data-lang="sh"><span style="color:#e06c75;">twitter-bot
   ├──</span><span style="color:#abb2bf;"> Cargo.lock
   </span><span style="color:#e06c75;">├──</span><span style="color:#abb2bf;"> Cargo.toml
   </span><span style="color:#e06c75;">├──</span><span style="color:#abb2bf;"> LICENSE
@@ -247,26 +247,26 @@ Il grosso del lavoro è quindi procurarsi le credenziali da sviluppatore di <a h
 </span></code></pre>
 <p>Sempre con spirito di intraprendenza, ho voluto sperimentare anche <a href="https://tokio.rs">tokio</a>: un runtime per programmazione asincrona, praticamente lo standard de facto in Rust dall'introduzione dell'async/await di qualche anno fa. Per impostarlo basta aggiungerlo come dipendenza in <code>Cargo.toml</code> e usare le macro a disposizione:</p>
 <pre style="background-color:#282c34;">
-<code><span style="color:#abb2bf;">[dependencies.tokio]
+<code class="language-toml" data-lang="toml"><span style="color:#abb2bf;">[dependencies.tokio]
  </span><span style="color:#e06c75;">version </span><span style="color:#abb2bf;">= </span><span style="color:#98c379;">&quot;0.2&quot;
  </span><span style="color:#e06c75;">features </span><span style="color:#abb2bf;">= [</span><span style="color:#98c379;">&quot;macros&quot;</span><span style="color:#abb2bf;">]
 </span></code></pre>
 <p>oppure</p>
 <pre style="background-color:#282c34;">
-<code><span style="color:#e06c75;">tokio </span><span style="color:#abb2bf;">= {</span><span style="color:#e06c75;">version </span><span style="color:#abb2bf;">= </span><span style="color:#98c379;">&quot;0.2&quot;</span><span style="color:#abb2bf;">, </span><span style="color:#e06c75;">features </span><span style="color:#abb2bf;">= [</span><span style="color:#98c379;">&quot;macros&quot;</span><span style="color:#abb2bf;">]}
+<code class="language-toml" data-lang="toml"><span style="color:#e06c75;">tokio </span><span style="color:#abb2bf;">= {</span><span style="color:#e06c75;">version </span><span style="color:#abb2bf;">= </span><span style="color:#98c379;">&quot;0.2&quot;</span><span style="color:#abb2bf;">, </span><span style="color:#e06c75;">features </span><span style="color:#abb2bf;">= [</span><span style="color:#98c379;">&quot;macros&quot;</span><span style="color:#abb2bf;">]}
 </span></code></pre>
 <p>Nel main in <code>main.rs</code> , che useremo come entry point:</p>
 <pre style="background-color:#282c34;">
-<code><span style="color:#abb2bf;">#[</span><span style="color:#e06c75;">tokio</span><span style="color:#abb2bf;">::</span><span style="color:#e06c75;">main</span><span style="color:#abb2bf;">]
+<code class="language-rust" data-lang="rust"><span style="color:#abb2bf;">#[</span><span style="color:#e06c75;">tokio</span><span style="color:#abb2bf;">::</span><span style="color:#e06c75;">main</span><span style="color:#abb2bf;">]
  async </span><span style="color:#c678dd;">fn </span><span style="color:#61afef;">main</span><span style="color:#abb2bf;">() {}
 </span></code></pre>
 <p>Il runtime async ci servirà soprattuto per le richieste http non bloccanti che fanno risparmiare risorse di sistema. In particolare, usando <a href="https://github.com/seanmonstar/reqwest">reqwest</a>, che supporta tokio, possiamo scrivere:</p>
 <pre style="background-color:#282c34;">
-<code><span style="color:#abb2bf;">reqwest::get(url).await</span><span style="color:#56b6c2;">?</span><span style="color:#abb2bf;">.</span><span style="color:#56b6c2;">bytes</span><span style="color:#abb2bf;">().await</span><span style="color:#56b6c2;">?
+<code class="language-rust" data-lang="rust"><span style="color:#abb2bf;">reqwest::get(url).await</span><span style="color:#56b6c2;">?</span><span style="color:#abb2bf;">.</span><span style="color:#56b6c2;">bytes</span><span style="color:#abb2bf;">().await</span><span style="color:#56b6c2;">?
 </span></code></pre>
 <p>Il <code>?</code> è zucchero sintattico per il try-catch di Rust che propaga l'errore, una scrittura equivalente sarebbe:</p>
 <pre style="background-color:#282c34;">
-<code><span style="color:#c678dd;">match </span><span style="color:#abb2bf;">request::get(url).await {
+<code class="language-rust" data-lang="rust"><span style="color:#c678dd;">match </span><span style="color:#abb2bf;">request::get(url).await {
   Ok(response) </span><span style="color:#56b6c2;">=&gt; </span><span style="color:#c678dd;">match</span><span style="color:#abb2bf;"> response.</span><span style="color:#56b6c2;">byte</span><span style="color:#abb2bf;">().await {
     Ok(response) </span><span style="color:#56b6c2;">=&gt;</span><span style="color:#abb2bf;"> response,
     Err(e) </span><span style="color:#56b6c2;">=&gt; </span><span style="color:#c678dd;">return </span><span style="color:#abb2bf;">Err(e),
@@ -276,7 +276,7 @@ Il grosso del lavoro è quindi procurarsi le credenziali da sviluppatore di <a h
 </span></code></pre>
 <p>Non c'è nemmeno bisogno di dire quale sia la più leggibile, però bisogna ricordarsi che per propagare gli errori si deve usare l'enum generico <code>Result&lt;T, E&gt;</code> , quindi il main deve essere leggermente modificato: </p>
 <pre style="background-color:#282c34;">
-<code><span style="color:#c678dd;">use </span><span style="color:#abb2bf;">std::error:: Error; 
+<code class="language-rust" data-lang="rust"><span style="color:#c678dd;">use </span><span style="color:#abb2bf;">std::error:: Error; 
 </span><span style="color:#c678dd;">use </span><span style="color:#abb2bf;">std::result:: Result; 
 
 #[</span><span style="color:#e06c75;">tokio</span><span style="color:#abb2bf;">::</span><span style="color:#e06c75;">main</span><span style="color:#abb2bf;">]
@@ -291,7 +291,7 @@ async </span><span style="color:#c678dd;">fn </span><span style="color:#61afef;"
 <li>sleep per x secondi prima di ripetere il ciclo</li>
 </ol>
 <pre style="background-color:#282c34;">
-<code><span style="color:#c678dd;">loop </span><span style="color:#abb2bf;">{  
+<code class="language-rust" data-lang="rust"><span style="color:#c678dd;">loop </span><span style="color:#abb2bf;">{  
     </span><span style="color:#c678dd;">let</span><span style="color:#abb2bf;"> post </span><span style="color:#56b6c2;">= last_post</span><span style="color:#abb2bf;">(</span><span style="color:#56b6c2;">...</span><span style="color:#abb2bf;">).await</span><span style="color:#56b6c2;">?</span><span style="color:#abb2bf;">;
     </span><span style="color:#c678dd;">let</span><span style="color:#abb2bf;"> last_tweet_date </span><span style="color:#56b6c2;">= last_tweet</span><span style="color:#abb2bf;">(</span><span style="color:#56b6c2;">...</span><span style="color:#abb2bf;">).await</span><span style="color:#56b6c2;">?</span><span style="color:#abb2bf;">;
 
@@ -322,7 +322,7 @@ async </span><span style="color:#c678dd;">fn </span><span style="color:#61afef;"
                 <div class="copyright">
                     
                         <span>© 
-    2020
+    2021
  Gabriele Belluardo</span>
                     
                     <span class="copyright-theme">
