@@ -10,6 +10,7 @@ compile_sass = true
 generate_feed = true
 feed_filename = "rss.xml"
 
+# NOTE: deprecation in 0.14
 highlight_code = true
 highlight_theme = "nyx-bold"
 
