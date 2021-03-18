@@ -1,0 +1,21 @@
+{
+  "short_name": "gabelluardo",
+  "name": "gabelluardo",
+  "description": "Persona blog",
+  "icons": [
+    {
+      "src": "/static/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "fullscreen",
+  "theme_color": "#1d212c",
+  "background_color": "#ffffff"
+}
