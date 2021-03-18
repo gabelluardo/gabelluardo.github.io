@@ -10,7 +10,9 @@ tags=["twitter", "bot", "rust", "async", "tokio"]
 Ho iniziato a studiare [Rust][1] a tempo perso qualche mese fa, tra un esame e l'altro.
 È oggettivamente un linguaggio difficile da usare e senza un IDE o dei plug-in 
 per l'editor può diventare un incubo anche scrivere programmi basilari.
+
 <!-- more -->
+
 Piuttosto che Rust avrebbero dovuto chiamarlo Doom...
 
 <img class="media" src="https://media.giphy.com/media/1xNApQKoX1uW2vhVE9/giphy.gif">
@@ -103,7 +105,7 @@ loop {
 
 Penso che le parti interessanti siano su per giù queste, il repository completo è comunque su [github][9]
 
-<img class="media" src="/assets/ferris.gif">
+<img class="media" src="ferris.gif">
 
 [1]: https://www.rust-lang.org/it
 [2]: https://github.com/egg-mode-rs/egg-mode

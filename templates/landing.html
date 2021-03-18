@@ -1,0 +1,8 @@
+{% extends "index.html" %}
+{% block content %}
+  <div class="post">
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% set section = get_section(path="_index.md") %}
+    {{ post_macros::content(page=page, summary=false) }}
+  </div>
+{% endblock content %}

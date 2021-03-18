@@ -10,8 +10,8 @@ compile_sass = true
 generate_feed = true
 feed_filename = "rss.xml"
 
-# TODO: minify break highlight code
-# minify_html = true
+# TODO: minify breaks highlight code
+minify_html = true
 
 languages = [
   { code = "en", rss = true }
@@ -30,13 +30,13 @@ highlight_theme = "nyx-bold"
 menu_items = [
   # each of these is optional, name and url are required
   # $BASE_URL is going to be substituted by base_url from configuration
-  { name = "blog", url = "$BASE_URL" },
+  { name = "home", url = "$BASE_URL" },
 
   # tags should only be enabled if you have "tags" taxonomy
   # see documentation below for more details
+  { name = "blog", url = "$BASE_URL/blog" },
   { name = "tags", url = "$BASE_URL/tags" },
   { name = "archive", url = "$BASE_URL/archive" },
-  { name = "about", url = "$BASE_URL/about" },
   { name = "github", url = "https://github.com/gabelluardo", newtab = true },
   { name = "twitter", url = "https://twitter.com/ugabbel", newtab = true }
 ]

@@ -1,0 +1,137 @@
+{% import "macros/date.html" as date_macros %}
+{% import "macros/head.html" as head_macros %}
+{% import "macros/menu.html" as menu_macros %}
+{% import "macros/post.html" as post_macros %}
+<!DOCTYPE html>
+<html lang="{% if config.default_language %}{{ config.default_language }}{% else %}en{% endif %}">
+  <head>
+    <title>
+      {% block title %}
+        {{ config.title }}
+      {% endblock title %}
+    </title>
+    {{ head_macros::head(config=config) }}
+    {% if config.generate_feed %}
+      <link href="{{ get_url(path=" rss.xml") | safe }}" rel="alternate" title="RSS" type="application/rss+xml"/>
+    {% endif %}
+    {% if config.extra.favicon %}
+      <link href="{{ get_url(path=" apple-touch-icon.png") }}" rel="apple-touch-icon" sizes="180x180"/>
+      <link href="{{ config.extra.favicon | safe }}" rel="shortcut icon" type="{{ config.extra.favicon_mimetype | default(value=" image/x-icon") }}"/>
+    {% endif %}
+    {% block extra_head %}{% endblock extra_head %}
+  </head>
+  <body class="">
+    <div class="container">
+      {% block header %}
+        <header class="header">
+          <div class="header__inner">
+            <div class="header__logo">
+              {% if config.logo_home_link %}
+                {% set logo_link = config.logo_home_link %}
+              {% else %}
+                {% set logo_link = config.base_url %}
+              {% endif %}
+              <a href="{{ logo_link | safe }}" style="text-decoration: none;">
+                <div class="logo">
+                  {% if config.extra.logo_text %}
+                    {{ config.extra.logo_text }}
+                  {% else %}
+                    Terminimal theme
+                  {% endif %}
+                </div>
+              </a>
+            </div>
+          </div>
+          {% if current_path %}
+            {{ menu_macros::menu(config=config, current_path=current_path) }}
+          {% endif %}
+        </header>
+      {% endblock header %}
+      <div class="content">
+        {% block content %}
+          <div class="post">
+            <p>Ciao, mi chiamo Gabriele, studio
+              <a href="https://it.wikipedia.org/wiki/Ingegneria_del_software" target="_blank">Software engineering</a>
+              al
+              <a href="https://www.polito.it" target="_blank">Politecnico di Torino</a>
+              e sono membro del team
+              <a href="http://www.policumbent.it" target="_blank">Policumbent</a>
+              al reparto di Strumentazione Elettronica. <br/>Ho una spiccata curiosità per le nuove tecnologie, in particolare dell'universo attorno a
+              <a href="https://www.rust-lang.org" target="_blank">Rust</a>
+              e al mondo dello sviluppo di videogiochi.
+            </p>
+            <br/>
+            <h2>Alcuni miei progetti</h2>
+            <ul>
+              <li>
+                <p>
+                  <a href="https://policumbent.github.io/marta-ui" target="_blank">MARTA</a>
+                </p>
+                <p>Telemetria per i prototipi del team Policumbent</p>
+              </li>
+              <li>
+                <p>
+                  <a href="https://github.com/policumbent/alice" target="_blank">ALICE</a>
+                </p>
+                <p>Live dashboard pubblica per seguire le run del team Policumbent</p>
+              </li>
+              <li>
+                <p>
+                  <a href="https://github.com/policumbent/pyxbee" target="_blank">pyxbee</a>
+                </p>
+                <p>Libreria python per le antenne xbee e MARTA, basata su
+                  <a href="https://github.com/digidotcom/xbee-python" target="_blank">digi-xbee</a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="https://github.com/gabelluardo/anime-dl" target="_blank">anime-dl</a>
+                </p>
+                <p>CLI per download di serie anime, ha funzioni di scraping per noti archivi web e streaming via vlc</p>
+              </li>
+              <li>
+                <p>
+                  <a href="https://github.com/gabelluardo/twitter-bot" target="_blank">twitter-bot</a>
+                </p>
+                <p>Bot che twitta in automatico ogni volta che viene pubblicato un nuovo blog post</p>
+              </li>
+            </ul>
+          </div>
+        {% endblock content %}
+      </div>
+      {% block footer %}
+        <footer class="footer">
+          <div class="footer__inner">
+            {% if config.extra.copyright_html %}
+              <div class="copyright copyright--user">{{ config.extra.copyright_html | safe }}</div>
+            {% else %}
+              <div class="copyright">
+                {% if config.extra.author %}
+                  <span>© {{ date_macros::now_year() }}
+                    {{ config.extra.author }}</span>
+                {% else %}
+                  <span>© {{ date_macros::now_year() }} Powered by
+                    <a href="https://www.getzola.org/">Zola</a>
+                  </span>
+                  <span class="copyright-theme">
+                    <span class="copyright-theme-sep">::
+                    </span>
+                    Theme:
+                    <a href="https://github.com/pawroman/zola-theme-terminimal/">Terminimal</a>
+                    by pawroman
+                  </span>
+                {% endif %}
+                <span class="copyright-theme">
+                  <span class="copyright-theme-sep">::
+                  </span>
+                  {{ config.extra.footer_copyright | safe }}
+                  {{ post_macros::feed(visible=config.generate_feed) }}
+                </span>
+              </div>
+            {% endif %}
+          </div>
+        </footer>
+      {% endblock footer %}
+    </p>
+  </body>
+</html></p></div></body></body></html></body></html>
