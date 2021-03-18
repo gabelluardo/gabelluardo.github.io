@@ -15,29 +15,4 @@
     <url>
         <loc>https://gabelluardo.github.io/example/</loc>
     </url>
-    <url>
-        <loc>https://gabelluardo.github.io/page/1/</loc>
-    </url>
-    <url>
-        <loc>https://gabelluardo.github.io/tags/</loc>
-    </url>
-    <url>
-        <loc>https://gabelluardo.github.io/tags/async/</loc>
-    </url>
-    <url>
-        <loc>https://gabelluardo.github.io/tags/bot/</loc>
-    </url>
-    <url>
-        <loc>https://gabelluardo.github.io/tags/rust/</loc>
-    </url>
-    <url>
-        <loc>https://gabelluardo.github.io/tags/tokio/</loc>
-    </url>
-    <url>
-        <loc>https://gabelluardo.github.io/tags/twitter/</loc>
-    </url>
-    <url>
-        <loc>https://gabelluardo.github.io/twitter-bot/</loc>
-        <lastmod>2020-08-06</lastmod>
-    </url>
 </urlset>
