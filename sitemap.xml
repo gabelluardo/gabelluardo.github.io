@@ -4,15 +4,21 @@
         <loc>https://gabelluardo.github.io/</loc>
     </url>
     <url>
-        <loc>https://gabelluardo.github.io/about/</loc>
+        <loc>https://gabelluardo.github.io/archive/</loc>
     </url>
     <url>
-        <loc>https://gabelluardo.github.io/archive/</loc>
+        <loc>https://gabelluardo.github.io/blog/</loc>
     </url>
     <url>
         <loc>https://gabelluardo.github.io/en/</loc>
     </url>
     <url>
+        <loc>https://gabelluardo.github.io/en/blog/</loc>
+    </url>
+    <url>
         <loc>https://gabelluardo.github.io/example/</loc>
+    </url>
+    <url>
+        <loc>https://gabelluardo.github.io/tags/</loc>
     </url>
 </urlset>
