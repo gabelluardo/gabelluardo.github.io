@@ -1,0 +1,15 @@
+ci:
+  collect:
+    staticDistDir: ./public
+
+  assert:
+    # assert options here
+
+  upload:
+    target: temporary-public-storage
+
+  server:
+    # server options here
+
+  wizard:
+    # wizard options here
