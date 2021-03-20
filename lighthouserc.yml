@@ -1,15 +1,8 @@
 ci:
   collect:
     staticDistDir: ./public
-
-  assert:
-    # assert options here
+    settings:
+      skipAudits: [is-on-https]
 
   upload:
     target: temporary-public-storage
-
-  server:
-    # server options here
-
-  wizard:
-    # wizard options here
