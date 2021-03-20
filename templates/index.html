@@ -19,7 +19,10 @@
       <link href="{{ get_url(path=" apple-touch-icon.png") }}" rel="apple-touch-icon" sizes="180x180"/>
       <link href="{{ config.extra.favicon | safe }}" rel="shortcut icon" type="{{ config.extra.favicon_mimetype | default(value=" image/x-icon") }}"/>
     {% endif %}
-    {% block extra_head %}{% endblock extra_head %}
+    {% block extra_head %}
+      <meta content="Personal  tech website" name="description"/>
+      <meta content="Hacking,Programming,Ranting" name="keywords"/>
+    {% endblock extra_head %}
   </head>
   <body class="">
     <div class="container">

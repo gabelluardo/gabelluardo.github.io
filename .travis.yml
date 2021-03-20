@@ -20,7 +20,7 @@ after_success: |
   [ $TRAVIS_PULL_REQUEST = false ] &&
   zola build &&
   rm -rf .git &&
-  git clone https://github.com/gabelluardo/gabelluardo.github.io.git out &&
+  git clone --depth 1 https://github.com/gabelluardo/gabelluardo.github.io.git out &&
   cd out && mv ../public . &&
   sudo pip install ghp-import &&
   ghp-import -n public -b master -m "Update" &&
