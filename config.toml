@@ -11,7 +11,7 @@ generate_feed = true
 feed_filename = "rss.xml"
 
 # TODO: minify breaks highlight code
-minify_html = true
+minify_html = false
 
 languages = [
   { code = "en", rss = true }

@@ -8,7 +8,7 @@ tags=["twitter", "bot", "rust", "async", "tokio"]
 +++
 
 Ho iniziato a studiare [Rust][1] a tempo perso qualche mese fa, tra un esame e l'altro.
-È oggettivamente un linguaggio difficile da usare e senza un IDE o dei plug-in 
+È oggettivamente un linguaggio difficile da usare e senza un IDE o dei plug-in
 per l'editor può diventare un incubo anche scrivere programmi basilari.
 
 <!-- more -->
@@ -24,7 +24,7 @@ Il grosso del lavoro è quindi procurarsi le credenziali da sviluppatore di [twi
 
 Dato che con Rust ci viene fornito anche il comodissimo [cargo][5] che si occupa della struttura, della compilazione e della pubblicazione su [crate.io][6] del progetto, quello che otteniamo lanciando `cargo new twitter-bot` è questo:
 
-``` sh
+```sh
 twitter-bot
   ├── Cargo.lock
   ├── Cargo.toml
@@ -36,7 +36,7 @@ twitter-bot
 
 Sempre con spirito di intraprendenza, ho voluto sperimentare anche [tokio][7]: un runtime per programmazione asincrona, praticamente lo standard de facto in Rust dall'introduzione dell'async/await di qualche anno fa. Per impostarlo basta aggiungerlo come dipendenza in `Cargo.toml` e usare le macro a disposizione:
 
-``` toml
+```toml
 [dependencies.tokio]
  version = "0.2"
  features = ["macros"]
@@ -44,26 +44,26 @@ Sempre con spirito di intraprendenza, ho voluto sperimentare anche [tokio][7]: u
 
 oppure
 
-``` toml
+```toml
 tokio = {version = "0.2", features = ["macros"]}
 ```
 
 Nel main in `main.rs` , che useremo come entry point:
 
-``` rust
+```rust
 #[tokio::main]
  async fn main() {}
 ```
 
 Il runtime async ci servirà soprattuto per le richieste http non bloccanti che fanno risparmiare risorse di sistema. In particolare, usando [reqwest][8], che supporta tokio, possiamo scrivere:
 
-``` rust
+```rust
 reqwest::get(url).await?.bytes().await?
 ```
 
 Il `?` è zucchero sintattico per il try-catch di Rust che propaga l'errore, una scrittura equivalente sarebbe:
 
-``` rust
+```rust
 match request::get(url).await {
   Ok(response) => match response.byte().await {
     Ok(response) => response,
@@ -73,16 +73,17 @@ match request::get(url).await {
 }
 ```
 
-Non c'è nemmeno bisogno di dire quale sia la più leggibile, però bisogna ricordarsi che per propagare gli errori si deve usare l'enum generico `Result<T, E>` , quindi il main deve essere leggermente modificato: 
+Non c'è nemmeno bisogno di dire quale sia la più leggibile, però bisogna ricordarsi che per propagare gli errori si deve usare l'enum generico `Result<T, E>` , quindi il main deve essere leggermente modificato:
 
-```rust 
-use std::error:: Error; 
-use std::result:: Result; 
+```rust
+use std::error:: Error;
+use std::result:: Result;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error>> {}
 
-``` 
+```
+
 Un'altra funzione comoda di Rust è `loop` , che fornisce di defalut un ciclo infinito in cui possiamo:
 
 1. ricavare le informazioni dell'ultimo post del blog
@@ -90,8 +91,8 @@ Un'altra funzione comoda di Rust è `loop` , che fornisce di defalut un ciclo in
 3. controllare che il post sia più recente dell'ultimo tweet, quindi pubblicarlo
 4. sleep per x secondi prima di ripetere il ciclo
 
-```rust 
-loop {  
+```rust
+loop {
     let post = last_post(...).await?;
     let last_tweet_date = last_tweet(...).await?;
 
