@@ -1,7 +1,6 @@
 +++
 title="Example"
 date=2019-11-22
-draft=true
 
 [taxonomies]
 tags=["hello", "blog", "example"]
@@ -14,13 +13,14 @@ tags=["hello", "blog", "example"]
 ### H3
 
 #### H4
+
 <!-- more -->
+
 ##### H5
 
 ###### H6
 
-Paragraph
----
+## Paragraph
 
 > This is a quote
 
@@ -33,8 +33,8 @@ Paragraph
 `const foo = bar`
 
 ```javascript
-const foo = bar
-console.log(foo)
+const foo = bar;
+console.log(foo);
 ```
 
 ---

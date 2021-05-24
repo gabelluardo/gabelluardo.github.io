@@ -1,23 +1,24 @@
 +++
 title="This is a good first post"
 date=2019-08-23
-draft=true
 
 [taxonomies]
 tags=["hello", "blog", "first"]
 +++
 
 So i went there and did all that but as you know:
-* This point was important 
-* This as well...
-* And not to mention this one
+
+- This point was important
+- This as well...
+- And not to mention this one
 
 So i did those other things but:
+
 1. The first thing
 2. And the second thing
 3. But the third was the `best`
-And then the guy said:
-> Man, i'm not gonna be the part of the system
+   And then the guy said:
+   > Man, i'm not gonna be the part of the system
 
 And showed me this:
 
@@ -42,7 +43,6 @@ Then i shouted
 
 ## Hello
 
-### Hello 
+### Hello
 
-#### Hello 
-
+#### Hello

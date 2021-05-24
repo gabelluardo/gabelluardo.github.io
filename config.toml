@@ -2,7 +2,7 @@
 base_url = "https://gabelluardo.github.io"
 
 title = "Gabelluardo"
-default_language = "it"
+default_language = "en"
 
 theme = "terminimal"
 compile_sass = true
@@ -14,7 +14,7 @@ feed_filename = "rss.xml"
 minify_html = false
 
 languages = [
-  { code = "en", rss = true }
+  { code = "it", rss = true }
 ]
 
 taxonomies = [
