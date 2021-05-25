@@ -16,7 +16,7 @@
       <link href="{{ get_url(path=" rss.xml") | safe }}" rel="alternate" title="RSS" type="application/rss+xml"/>
     {% endif %}
     {% if config.extra.favicon %}
-      <link href="{{ get_url(path=" apple-touch-icon.png") }}" rel="apple-touch-icon" sizes="180x180"/>
+      <link href="{{ get_url(path="apple-touch-icon.png") }}" rel="apple-touch-icon" sizes="180x180"/>
       <link href="{{ config.extra.favicon | safe }}" rel="shortcut icon" type="{{ config.extra.favicon_mimetype | default(value=" image/x-icon") }}"/>
     {% endif %}
     {% block extra_head %}
