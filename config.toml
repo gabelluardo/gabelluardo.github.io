@@ -34,9 +34,9 @@ menu_items = [
 
   # tags should only be enabled if you have "tags" taxonomy
   # see documentation below for more details
-  { name = "blog", url = "$BASE_URL/blog" },
-  { name = "tags", url = "$BASE_URL/tags" },
-  { name = "archive", url = "$BASE_URL/archive" },
+  #{ name = "blog", url = "$BASE_URL/blog" },
+  #{ name = "tags", url = "$BASE_URL/tags" },
+  #{ name = "archive", url = "$BASE_URL/archive" },
   { name = "github", url = "https://github.com/gabelluardo", newtab = true },
   { name = "twitter", url = "https://twitter.com/ugabbel", newtab = true }
 ]
