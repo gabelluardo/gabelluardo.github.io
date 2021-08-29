@@ -9,18 +9,19 @@ compile_sass = true
 
 generate_feed = true
 feed_filename = "rss.xml"
+minify_html = true
 
-# TODO: minify breaks highlight code
-minify_html = false
+# NOTE: for blog posts
+# taxonomies = [
+#   { name = "tags" },
+# ]
 
-languages = [
-  { code = "it", rss = true }
-]
+# [languages.it]
+# generate_feed = true
+# taxonomies = [
+#   { name = "tags" },
+# ]
 
-taxonomies = [
-  { name = "tags", rss = true, lang = "it" },
-  { name = "tags", rss = true, lang = "en" },
-]
 
 [markdown]
 highlight_code = true
