@@ -26,7 +26,7 @@
 <!-- Analytics and trakers -->
 {% if config.extra.matomo.enable %}
 <!-- Matomo -->
-<script type="text/javascript">
+<script async type="text/javascript">
   var _paq = window._paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
   _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
@@ -59,7 +59,7 @@
 
 {% if config.extra.goatcounter.enable %}
 <!-- Goatcounter -->
-<script data-goatcounter="https://{{ config.extra.goatcounter.code }}.goatcounter.com/count" async
+<script async data-goatcounter="https://{{ config.extra.goatcounter.code }}.goatcounter.com/count" async
   src="//gc.zgo.at/count.js"></script>
 <!-- End Goatcounter Code -->
 {% endif %}
