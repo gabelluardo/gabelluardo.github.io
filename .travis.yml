@@ -7,7 +7,7 @@ before_script:
   # Download and unzip the zola executable
   # Replace the version numbers in the URL by the version you want to use
   - curl -s -L https://github.com/getzola/zola/releases/download/v0.14.1/zola-v0.14.1-x86_64-unknown-linux-gnu.tar.gz | sudo tar xvzf - -C /usr/local/bin
-  - npm install -g @lhci/cli@0.7.x
+  - npm install -g @lhci/cli@0.8.x
 
 script:
   - zola build
