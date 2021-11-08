@@ -18,12 +18,12 @@ script:
 # If you are using a different folder than `public` for the output directory, you will
 # need to change the `zola` command and the `ghp-import` path
 after_success: |
-  [ $TRAVIS_BRANCH = master ] &&
+  [ $TRAVIS_BRANCH = main ] &&
   [ $TRAVIS_PULL_REQUEST = false ] &&
   zola build &&
   rm -rf .git &&
   git clone --depth 1 https://github.com/gabelluardo/gabelluardo.github.io.git out &&
   cd out && mv ../public . &&
   sudo pip install ghp-import &&
-  ghp-import -n public -b master -m "Update" &&
-  git push -fq https://${GH_TOKEN}@github.com/gabelluardo/gabelluardo.github.io.git master
+  ghp-import -n public -b gh-pages -m "Update" &&
+  git push -fq https://${GH_TOKEN}@github.com/gabelluardo/gabelluardo.github.io.git gh-pages
