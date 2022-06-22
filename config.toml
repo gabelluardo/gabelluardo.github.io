@@ -39,7 +39,7 @@ menu_items = [
   #{ name = "tags", url = "$BASE_URL/tags" },
   #{ name = "archive", url = "$BASE_URL/archive" },
   { name = "github", url = "https://github.com/gabelluardo", newtab = true },
-  { name = "twitter", url = "https://twitter.com/ugabbel", newtab = true }
+  { name = "linkedin", url = "https://www.linkedin.com/in/gabriele-belluardo-10585b200/", newtab = true }
 ]
 
 # One of: blue, green, orange, pink, red.
