@@ -25,8 +25,8 @@ const items = [
         <li>
           <a
             href={item.url}
-            target={item.new_tab ? "_blank" : ""}
-            rel={item.new_tab ? "noopener noreferrer" : ""}
+            target={item.new_tab ? "_blank" : null}
+            rel={item.new_tab ? "noopener noreferrer" : null}
           >
             {item.name}
           </a>
