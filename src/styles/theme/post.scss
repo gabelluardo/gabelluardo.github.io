@@ -57,7 +57,7 @@
   %tags {
     margin-bottom: 20px;
     font-size: 1rem;
-    opacity: .5;
+    opacity: 0.5;
   }
 
   &-tags {
@@ -96,7 +96,7 @@
     list-style: none;
 
     li:before {
-      content: '►';
+      content: "►";
       position: absolute;
       left: -20px;
       color: var(--accent);
@@ -113,7 +113,7 @@
     justify-content: center;
     margin-bottom: 10px;
 
-    &+h2 {
+    & + h2 {
       margin-top: -10px;
       margin-bottom: 20px;
     }
