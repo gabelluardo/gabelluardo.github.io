@@ -1,0 +1,83 @@
+---
+import "../styles/style.scss";
+import Menu from "../components/Menu.astro";
+import Copy from "../components/Copy.astro";
+
+export interface Props {
+  title: string;
+  author: string;
+}
+
+const { title, author } = Astro.props;
+const year = new Date().getFullYear();
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+    <meta name="generator" content={Astro.generator} />
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="noodp" />
+    <meta name="theme-color" content="#1F222A" />
+
+    <!-- Goatcounter -->
+    <script
+      async
+      data-goatcounter="https://gabelluardo.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"
+    ></script>
+
+    <title>{title}</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__inner">
+          <div class="header__logo">
+            <a href="/" style="text-decoration: none;">
+              <div class="logo">
+                {title}
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Menu links -->
+        <Menu />
+      </header>
+
+      <!-- Main content -->
+      <div class="content">
+        <slot />
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="copyright">
+            <span
+              ><Copy />
+              {year}
+              {author}</span
+            >
+            <span class="copyright-theme">
+              <span class="copyright-theme-sep">::</span>
+              <a
+                href="https://creativecommons.org/licenses/by-nc/4.0/"
+                target="_blank"
+                rel="noopener">CC BY-NC 4.0</a
+              >
+            </span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

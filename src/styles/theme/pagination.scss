@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 .pagination {
   margin-top: 50px;
@@ -14,9 +14,9 @@
       margin: 0 auto;
       padding: 5px 10px;
       background: var(--background);
-      font-size: .8rem;
+      font-size: 0.8rem;
       text-transform: uppercase;
-      letter-spacing: .1em;
+      letter-spacing: 0.1em;
       z-index: 1;
     }
 

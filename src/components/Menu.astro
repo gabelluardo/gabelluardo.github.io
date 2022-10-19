@@ -1,0 +1,37 @@
+---
+const items = [
+  {
+    name: "home",
+    url: "/",
+    new_tab: false,
+  },
+  {
+    name: "github",
+    url: "https://github.com/gabelluardo",
+    new_tab: true,
+  },
+  {
+    name: "linkedin",
+    url: "https://www.linkedin.com/in/gabriele-belluardo-10585b200/",
+    new_tab: true,
+  },
+];
+---
+
+<nav class="menu">
+  <ul class="menu__inner">
+    {
+      items.map((item) => (
+        <li>
+          <a
+            href={item.url}
+            target={item.new_tab ? "_blank" : null}
+            rel={item.new_tab ? "noopener noreferrer" : null}
+          >
+            {item.name}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

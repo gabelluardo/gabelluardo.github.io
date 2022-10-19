@@ -13,7 +13,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: Space Mono, DejaVu Sans Mono, Monaco, Consolas, Ubuntu Mono, monospace;
+  font-family: Space Mono, DejaVu Sans Mono, Monaco, Consolas, Ubuntu Mono,
+    monospace;
   font-size: 1rem;
   line-height: 1.54;
   background-color: var(--background);
@@ -57,7 +58,6 @@ h5,
 h6 {
   font-size: 1.15rem;
 }
-
 
 a {
   color: inherit;
@@ -135,21 +135,23 @@ figure {
 }
 
 code {
-  font-family: JetBrains Mono, Space Mono, DejaVu Sans Mono, Monaco, Consolas, Ubuntu Mono, monospace;
+  font-family: JetBrains Mono, Space Mono, DejaVu Sans Mono, Monaco, Consolas,
+    Ubuntu Mono, monospace;
   font-feature-settings: normal;
   background: var(--accent-alpha-20);
   padding: 1px 6px;
   margin: 0 2px;
-  font-size: .95rem;
+  font-size: 0.95rem;
 }
 
 pre {
-  font-family: Space Mono, DejaVu Sans Mono, Monaco, Consolas, Ubuntu Mono, monospace;
+  font-family: Space Mono, DejaVu Sans Mono, Monaco, Consolas, Ubuntu Mono,
+    monospace;
   padding: 20px;
-  font-size: .95rem;
+  font-size: 0.95rem;
   overflow: auto;
-  border-top: 1px solid rgba(255, 255, 255, .1);
-  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
   code {
     background: inherit;
@@ -172,7 +174,7 @@ blockquote {
   }
 
   &:before {
-    content: '”';
+    content: "”";
     font-family: Georgia, serif;
     font-size: 3.875rem;
     position: absolute;
@@ -193,7 +195,7 @@ blockquote {
   }
 
   p:before {
-    content: '>';
+    content: ">";
     display: block;
     position: absolute;
     left: -25px;
