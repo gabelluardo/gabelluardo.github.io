@@ -2,10 +2,25 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Gabelluardo" author="Gabriele Belluardo">
+<Layout site="Gabelluardo" author="Gabriele Belluardo">
   <div class="post">
     <div class="error-404">
       <h1 class="post-title">404 &#8212; Pagina non trovata</h1>
     </div>
   </div>
 </Layout>
+
+<style lang="scss">
+  .error-404 {
+  height: 10em;
+  display: flex;
+  margin-top: 15px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+</style>

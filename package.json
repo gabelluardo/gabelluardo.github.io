@@ -5,15 +5,18 @@
   "private": true,
   "scripts": {
     "start": "astro dev",
+    "start-host": "astro dev --host",
     "build": "astro build",
     "preview": "astro preview",
     "format": "prettier --write ./src",
     "astro": "astro"
   },
-  "dependencies": {
-    "astro": "^1.5.1"
-  },
   "devDependencies": {
+    "@astrojs/partytown": "^1.0.1",
+    "@fontsource/jetbrains-mono": "^4.5.11",
+    "@fontsource/space-mono": "^4.5.10",
+    "astro": "^1.5.1",
+    "astro-purgecss": "^1.2.1",
     "prettier": "^2.7.1",
     "prettier-plugin-astro": "^0.6.0",
     "sass": "^1.55.0",

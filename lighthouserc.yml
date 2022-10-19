@@ -1,6 +1,6 @@
 ci:
   collect:
-    staticDistDir: ./public
+    staticDistDir: ./dist
     settings:
       skipAudits: [is-on-https]
 

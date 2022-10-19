@@ -1,0 +1,35 @@
+---
+import Copy from "../components/Copy.astro";
+
+export interface Props {
+  author: string;
+}
+
+const { author } = Astro.props;
+const year = new Date().getFullYear();
+
+---
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="copyright">
+      <span
+        ><Copy />
+        {year}
+        {author}</span
+      >
+      <span class="copyright-theme">
+        <span class="copyright-theme-sep">::</span>
+        <a
+          href="https://creativecommons.org/licenses/by-nc/4.0/"
+          target="_blank"
+          rel="noopener">CC BY-NC 4.0</a
+        >
+      </span>
+    </div>
+  </div>
+</footer>
+
+<style lang="scss">
+  @import '../styles/footer.scss'
+</style>
