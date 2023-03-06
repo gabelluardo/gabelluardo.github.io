@@ -38,7 +38,7 @@ const { site, author } = Astro.props;
 
   <body>
     <div class="container">
-      <Header site={site}/>
+      <Header site={site} />
 
       <!-- Main content -->
       <div class="content">
@@ -47,42 +47,39 @@ const { site, author } = Astro.props;
 
       <Footer author={author} />
     </div>
+    <style is:inline>
+      :root {
+        --accent: #78e2a0;
+        --accent-alpha-70: rgba(120, 226, 160, 0.7);
+        --accent-alpha-20: rgba(120, 226, 160, 0.2);
+
+        --background: #1d212c;
+        --color: white;
+        --border-color: rgba(255, 255, 255, 0.1);
+      }
+
+      /* Scrollbar */
+
+      /* Works on Firefox */
+      * {
+        scrollbar-width: thin;
+        scrollbar-color: var(--accent) var(--background);
+      }
+
+      /* Works on Chrome, Edge, and Safari */
+      *::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      *::-webkit-scrollbar-track {
+        background: var(--background);
+      }
+
+      *::-webkit-scrollbar-thumb {
+        background-color: var(--accent);
+        border-radius: 20px;
+        border: 3px solid var(--background);
+      }
+    </style>
   </body>
-
 </html>
-
-
-<style is:inline>
-  :root {
-    --accent: #78e2a0;
-    --accent-alpha-70: rgba(120, 226, 160, 0.7);
-    --accent-alpha-20: rgba(120, 226, 160, 0.2);
-
-    --background: #1d212c;
-    --color: white;
-    --border-color: rgba(255, 255, 255, 0.1);
-  }
-
-  /* Scrollbar */
-
-  /* Works on Firefox */
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: var(--accent) var(--background);
-  }
-
-  /* Works on Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 10px;
-  }
-
-  *::-webkit-scrollbar-track {
-    background: var(--background);
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background-color: var(--accent);
-    border-radius: 20px;
-    border: 3px solid var(--background);
-  }
-</style>

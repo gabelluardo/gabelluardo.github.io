@@ -12,15 +12,15 @@
     "astro": "astro"
   },
   "devDependencies": {
-    "@astrojs/partytown": "^1.0.1",
-    "@fontsource/jetbrains-mono": "^4.5.11",
-    "@fontsource/space-mono": "^4.5.10",
-    "astro": "^1.5.1",
-    "astro-purgecss": "^1.2.1",
-    "prettier": "^2.7.1",
+    "@astrojs/partytown": "^1.0.3",
+    "@fontsource/jetbrains-mono": "^4.5.12",
+    "@fontsource/space-mono": "^4.5.12",
+    "astro": "^2.0.18",
+    "astro-purgecss": "^2.0.1",
+    "prettier": "^2.8.4",
     "prettier-plugin-astro": "^0.6.0",
-    "sass": "^1.55.0",
-    "stylelint": "^14.14.0",
+    "sass": "^1.58.3",
+    "stylelint": "^14.16.1",
     "stylelint-config-recommended-scss": "^7.0.0",
     "stylelint-config-standard": "^29.0.0"
   }
