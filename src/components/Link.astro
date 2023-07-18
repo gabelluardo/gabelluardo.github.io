@@ -1,0 +1,60 @@
+---
+import Terminal from "../components/Terminal.astro";
+
+const items = [
+  {
+    name: "Github",
+    url: "https://github.com/gabelluardo",
+    new_tab: true,
+  },
+  {
+    name: "Resume",
+    url: "/resume",
+    new_tab: true,
+  },
+  {
+    name: "Linkedin",
+    url: "https://www.linkedin.com/in/gabriele-belluardo-10585b200/",
+    new_tab: true,
+  },
+];
+---
+
+<div>
+  <Terminal blink text="me -h" />
+
+  <ul class="content links">
+    {
+      items.map((item) => (
+        <li>
+          <a
+            class={item.name.toLowerCase()}
+            href={item.url}
+            target={item.new_tab ? "_blank" : null}
+            rel={item.new_tab ? "noopener noreferrer" : null}
+          >
+            {item.name}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<style lang="scss">
+  .linkedin:hover {
+    color: #1a8cd8;
+  }
+
+  .resumee:hover {
+    color: #f5006f;
+  }
+
+  .github:hover {
+    color: #a6d189;
+  }
+
+  .cursor {
+    color: #f2d5cf;
+  }
+</style>

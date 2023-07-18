@@ -1,0 +1,33 @@
+---
+import { info } from "../globals";
+
+const { text, blink } = Astro.props;
+
+const width = `${info.site.length + 5 + text.length}ch`;
+---
+
+<div class={blink && "typeme"}>
+  <span class="text-secondary">{info.site}&nbsp;</span><span
+    class="text-background"
+    >~
+  </span><span class="cursor">$&nbsp;</span>{text}
+</div>
+
+<style define:vars={{ width }}>
+  .typeme {
+    width: var(--width);
+    animation: typing 1s steps(25), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 10px solid var(--url);
+  }
+
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: var(--width);
+    }
+  }
+</style>

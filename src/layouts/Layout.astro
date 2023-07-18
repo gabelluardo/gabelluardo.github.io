@@ -1,19 +1,9 @@
 ---
-import "@fontsource/space-mono";
-import "@fontsource/jetbrains-mono";
+import "@fontsource/ibm-plex-mono";
 
 import "../styles/main.scss";
-import "../styles/post.scss";
 
-import Header from "./Header.astro";
-import Footer from "./Footer.astro";
-
-export interface Props {
-  site: string;
-  author: string;
-}
-
-const { site, author } = Astro.props;
+import { info } from "../globals";
 ---
 
 <html lang="en">
@@ -30,55 +20,16 @@ const { site, author } = Astro.props;
     <meta name="description" content="Personal website" />
 
     <!-- Goatcounter -->
-    <script data-goatcounter="https://gabelluardo.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script
+      async
+      src="//gc.zgo.at/count.js"
+      data-goatcounter="https://gabelluardo.goatcounter.com/count"
+    ></script>
 
-    <title>{site}</title>
+    <title>{info.site}</title>
   </head>
 
   <body>
-    <div class="container">
-      <Header site={site} />
-
-      <!-- Main content -->
-      <div class="content">
-        <slot />
-      </div>
-
-      <Footer author={author} />
-    </div>
-    <style is:inline>
-      :root {
-        --accent: #78e2a0;
-        --accent-alpha-70: rgba(120, 226, 160, 0.7);
-        --accent-alpha-20: rgba(120, 226, 160, 0.2);
-
-        --background: #1d212c;
-        --color: white;
-        --border-color: rgba(255, 255, 255, 0.1);
-      }
-
-      /* Scrollbar */
-
-      /* Works on Firefox */
-      * {
-        scrollbar-width: thin;
-        scrollbar-color: var(--accent) var(--background);
-      }
-
-      /* Works on Chrome, Edge, and Safari */
-      *::-webkit-scrollbar {
-        width: 10px;
-      }
-
-      *::-webkit-scrollbar-track {
-        background: var(--background);
-      }
-
-      *::-webkit-scrollbar-thumb {
-        background-color: var(--accent);
-        border-radius: 20px;
-        border: 3px solid var(--background);
-      }
-    </style>
+    <slot />
   </body>
 </html>
