@@ -14,7 +14,6 @@ export default defineConfig({
     }),
     purgecss({
       fontFace: true,
-      keyframes: true,
     }),
   ],
 });
