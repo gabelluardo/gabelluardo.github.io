@@ -10,7 +10,7 @@
 
 * {
   background: var(--background);
-  font-family: 'IBM Plex Mono Medium', monospace;
+  font-family: "IBM Plex Mono Medium", monospace;
   font-weight: 500;
   color: var(--text);
 }
@@ -87,18 +87,25 @@ footer {
 /* animation */
 
 @keyframes fade {
-  0% { opacity: 0}
-  50% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-
 @keyframes blink {
-  50% { border-color: transparent;}
+  50% {
+    border-color: transparent;
+  }
 }
 
 /* dynamic resizing */
-@media (min-width:600px) {
+@media (min-width: 600px) {
   body {
     font-size: 1.25rem;
   }
