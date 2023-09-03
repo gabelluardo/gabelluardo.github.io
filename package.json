@@ -1,7 +1,7 @@
 {
-  "name": "@example/basics",
+  "name": "website",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "astro dev",
@@ -12,10 +12,10 @@
     "astro": "astro"
   },
   "devDependencies": {
-    "@astrojs/partytown": "^1.0.3",
+    "@astrojs/partytown": "^2.0.0",
     "@fontsource/ibm-plex-mono": "^5.0.5",
-    "astro": "^2.0.18",
-    "astro-purgecss": "^2.0.1",
+    "astro": "^3.0.7",
+    "astro-purgecss": "^3.0.0",
     "prettier": "^2.8.4",
     "prettier-plugin-astro": "^0.6.0",
     "sass": "^1.58.3",
