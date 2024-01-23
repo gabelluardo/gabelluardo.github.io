@@ -12,9 +12,9 @@
     "astro": "astro"
   },
   "devDependencies": {
-    "@astrojs/partytown": "^2.0.0",
+    "@astrojs/partytown": "^2.0.4",
     "@fontsource/ibm-plex-mono": "^5.0.8",
-    "astro": "^3.0.7",
+    "astro": "^4.2.3",
     "astro-purgecss": "^3.0.0",
     "prettier": "^3.0.3",
     "prettier-plugin-astro": "^0.12.0",
