@@ -37,6 +37,9 @@ a {
   color: var(--url);
   text-decoration: none;
 }
+a:hover {
+  color: var(--header)
+}
 
 footer {
   color: var(--text-background);
