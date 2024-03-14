@@ -5,34 +5,26 @@ const items = [
   {
     name: "Github",
     url: "https://github.com/gabelluardo",
-    new_tab: true,
   },
   {
     name: "Linkedin",
     url: "https://www.linkedin.com/in/gabriele-belluardo-10585b200/",
-    new_tab: true,
   },
   {
     name: "CV",
     url: "/cv/cv.pdf",
-    new_tab: true,
   },
-];
+] as const;
 ---
 
 <div>
-  <Terminal blink text="me -h" />
+  <Terminal blink text="whoami" />
 
   <ul class="content links">
     {
       items.map((item) => (
         <li>
-          <a
-            class={item.name.toLowerCase()}
-            href={item.url}
-            target={item.new_tab ? "_blank" : null}
-            rel={item.new_tab ? "noopener noreferrer" : null}
-          >
+          <a href={item.url} target="_blank" rel="noopener noreferrer">
             {item.name}
           </a>
         </li>
@@ -41,16 +33,8 @@ const items = [
   </ul>
 </div>
 
-<style lang="scss">
-  .linkedin:hover {
+<style>
+  a:hover {
     color: #1a8cd8;
-  }
-
-  .cv:hover {
-    color: #d08770;
-  }
-
-  .github:hover {
-    color: #bf616a;
   }
 </style>

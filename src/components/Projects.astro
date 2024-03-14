@@ -1,0 +1,56 @@
+---
+import Terminal from "./Terminal.astro";
+
+const items = [
+  // team
+  {
+    name: "susi",
+    url: "https://github.com/policumbent/susi",
+  },
+  {
+    name: "bob",
+    url: "https://github.com/policumbent/bob",
+  },
+  {
+    name: "alice",
+    url: "https://github.com/policumbent/alice",
+  },
+
+  // politecnico
+  {
+    name: "recs",
+    url: "https://github.com/pds-project-2021/recs",
+  },
+  {
+    name: "spg",
+    url: "https://github.com/ISS-P06/Solidarity-Purchasing-Group",
+  },
+  {
+    name: "questionario-aw1",
+    url: "https://github.com/gabelluardo/questionario-aw1",
+  },
+] as const;
+---
+
+<div>
+  <Terminal text="cat projects.md" />
+
+  <h3 style={{ backgroundColor: "#bf616a" }}># Projects</h3>
+  <ul>
+    {
+      items.map((item) => (
+        <li>
+          <a href={item.url} target="_blank" rel="noopener noreferrer">
+            {item.name}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<style>
+  a:hover {
+    color: #d08770;
+  }
+</style>

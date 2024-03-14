@@ -1,48 +1,48 @@
 ---
-import Terminal from "../layouts/Terminal.astro";
-import Layout from "../layouts/Layout.astro";
-import Link from "../layouts/Link.astro";
+import Layout from "../layouts/MainLayout.astro";
+
+import Link from "../components/Link.astro";
+import Terminal from "../components/Terminal.astro";
+import Contacts from "../components/Contacts.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout>
-  <Link />
+  <Contacts />
   <main class="content">
     <p>
-      Hi, I'm a MS Software engineering student @ <a
-        href="https://www.polito.it"
-        rel="noreferrer"
-        target="_blank">Politecnico di Torino</a
-      >
-      and the former head of <a
-        href="https://www.policumbent.it"
-        rel="noreferrer"
-        target="_blank">Policumbent</a
-      >'s Electronics and IT Area, where we built the <a
-        href="https://www.polito.it/ateneo/comunicazione-e-ufficio-stampa/poliflash/il-team-policumbent-vince-la-whpsc-2022-in-nevada"
-        rel="noreferrer"
-        target="_blank"
-      >
-        fastest
-      </a> human powered bike in the world.
+      Hi, I'm a MS Software engineering student @ <Link
+        url="https://www.polito.it"
+        text="Politecnico di Torino"
+      />
+      and the former head of <Link
+        url="https://www.policumbent.it"
+        text="Policumbent"
+      />'s Electronics and IT Area, where we built the <Link
+        url="https://www.polito.it/ateneo/comunicazione-e-ufficio-stampa/poliflash/il-team-policumbent-vince-la-whpsc-2022-in-nevada"
+        text="fastest"
+      />
+      human powered bike in the world.
     </p>
+
     <p>
-      I like to build stuff and release it open source, but also contributing to
-      improve open source ecosistem. I enjoy hacking and making with MCUs and I really love to
-      learn new technologies for making and hacking more.
-    </p><p>
+      I like creating stuff and release it open source, but also contributing to
+      other project for improving the open source ecosistem. I enjoy hacking and
+      making with MCUs and I really love learning new technologies for making
+      and hacking more.
+    </p>
+
+    <p>
       Currently I'm on my way to complete my master degree with a thesis about
-      Vulkan and Rust for <a
-        href="https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units"
-        rel="noreferrer"
-        target="_blank">GPGPU</a
-      > programming, but I'm also in web development with React+Typescript
-      and a bit of <a href="https://deno.com/" rel="noreferrer" target="_blank"
-        >Deno</a
-      >. My dream is to publish my first indie game with <a
-        href="https://godotengine.org/"
-        rel="noreferrer"
-        target="_blank">Godot</a
-      >.
+      Vulkan and Rust for <Link
+        url="https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units"
+        text="GPGPU"
+      /> programming, but I'm also in web development with Typescript and a bit of
+      <Link url="https://deno.com/" text="Deno" />. My dream is to publish my
+      first indie game with <Link
+        url="https://godotengine.org/"
+        text="Godot"
+      />.
     </p>
 
     <Terminal text="cat interests.md" />
@@ -50,16 +50,19 @@ import Link from "../layouts/Link.astro";
     <h3># Interests</h3>
     <ul>
       <li>linux</li>
-      <li>terminals and terminal tools</li>
+      <li>open source</li>
+      <li>programming languages</li>
       <li>backend development</li>
       <li>game development</li>
     </ul>
-  </main>
 
-  <footer class="content">
-    This site was styled with the <a
-      href="https://github.com/nordtheme"
-      target="_blank">Nord theme</a
-    >
-  </footer>
+    <Projects />
+
+    <footer class="content">
+      This site was styled with the <a
+        href="https://github.com/nordtheme"
+        target="_blank">Nord theme</a
+      >
+    </footer>
+  </main>
 </Layout>
