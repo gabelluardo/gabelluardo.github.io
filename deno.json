@@ -1,0 +1,18 @@
+{
+  "tasks": {
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
+    "build": "deno task lume",
+    "dev": "deno task lume -sw"
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "npm:preact",
+    "types": [
+      "lume/types.ts"
+    ]
+  },
+  "imports": {
+    "@fontsource/ibm-plex-mono": "npm:@fontsource/ibm-plex-mono@^5.0.12",
+    "lume/": "https://deno.land/x/lume@v2.1.2/"
+  }
+}

@@ -10,20 +10,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 18
+      - name: checkout
+        uses: actions/checkout@v2
 
-      - name: Build with astro
-        uses: withastro/action@v0
+      - name: Setup Deno environment
+        uses: denoland/setup-deno@v1
         with:
-          path: .
-          node-version: 18
-          package-manager: npm
+          deno-version: v1.x
+
+      - name: Build site
+        run: deno task build
 
       - name: Audit URLs using Lighthouse
-        uses: treosh/lighthouse-ci-action@v9
+        uses: treosh/lighthouse-ci-action@v11
         with:
           configPath: "./lighthouserc.yml"
           temporaryPublicStorage: true
