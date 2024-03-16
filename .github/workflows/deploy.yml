@@ -13,6 +13,10 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: checkout
         uses: actions/checkout@v2
@@ -25,13 +29,6 @@ jobs:
       - name: Build site
         run: deno task build
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
