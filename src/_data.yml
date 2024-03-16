@@ -1,0 +1,37 @@
+layout: layout.jsx
+info:
+  site: gabelluardo
+  author: Gabriele Belluardo
+  generator: lume
+
+contacts:
+  - name: Github
+    url: https://github.com/gabelluardo
+  - name: Linkedin
+    url: https://www.linkedin.com/in/gabriele-belluardo-10585b200/
+  - name: CV
+    url: /cv/cv.pdf
+
+interests:
+  - linux
+  - open source
+  - programming languages
+  - backend development
+  - game development
+
+projects:
+  # team
+  - name: susi
+    url: https://github.com/policumbent/susi
+  - name: bob
+    url: https://github.com/policumbent/bob
+  - name: alice
+    url: https://github.com/policumbent/alice
+
+  # politecnico
+  - name: recs
+    url: https://github.com/pds-project-2021/recs
+  - name: spg
+    url: https://github.com/ISS-P06/Solidarity-Purchasing-Group
+  - name: questionario-aw1
+    url: https://github.com/gabelluardo/questionario-aw1
