@@ -3,6 +3,7 @@ name: LHCI Analisys
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
   lighthouseci:
