@@ -12,7 +12,6 @@
     ]
   },
   "imports": {
-    "@fontsource/ibm-plex-mono": "npm:@fontsource/ibm-plex-mono@^5.0.12",
     "lume/": "https://deno.land/x/lume@v2.1.2/"
   }
 }

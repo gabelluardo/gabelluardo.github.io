@@ -4,6 +4,9 @@ export default ({ info, children }: Lume.Data) => (
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width" />
       <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+      <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      <link rel="manifest" href="/site.webmanifest" />
       <meta name="generator" content={info.generator} />
 
       <meta http-equiv="content-type" content="text/html; charset=utf-8" />
