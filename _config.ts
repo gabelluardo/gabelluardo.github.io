@@ -15,4 +15,16 @@ site
 
 site.copy("public", ".");
 
+// tranform all links to open in a new tab
+site.process([".html"], (pages) => {
+  pages.forEach((page) => {
+    const document = page.document!;
+
+    document.querySelectorAll('a[href^="http"]').forEach((link) => {
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noreferer noopener");
+    });
+  });
+});
+
 export default site;

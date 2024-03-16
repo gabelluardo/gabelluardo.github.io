@@ -1,4 +1,4 @@
-export const layout = "./base.jsx";
+export const layout = "base.jsx";
 
 export default ({ contacts, interests, projects, children, comp }) => (
   <>
@@ -7,12 +7,7 @@ export default ({ contacts, interests, projects, children, comp }) => (
       <ul class="links">
         {contacts.map((item) => (
           <li>
-            <a
-              class="contact-link"
-              href={item.url}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a class="contact-link" href={item.url}>
               {item.name}
             </a>
           </li>
@@ -34,12 +29,7 @@ export default ({ contacts, interests, projects, children, comp }) => (
       <ul>
         {projects.map((item) => (
           <li>
-            <a
-              class="project-link"
-              href={item.url}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a class="project-link" href={item.url}>
               {item.name}
             </a>
           </li>
@@ -48,9 +38,7 @@ export default ({ contacts, interests, projects, children, comp }) => (
     </main>
     <footer>
       This site was styled with the&nbsp;
-      <a href="https://github.com/nordtheme" target="_blank">
-        Nord theme
-      </a>
+      <a href="https://github.com/nordtheme">Nord theme</a>
     </footer>
   </>
 );
