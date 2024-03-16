@@ -8,8 +8,8 @@ export default ({
   comp,
 }: Lume.Data) => (
   <>
+    <comp.Terminal blink text="whoami" />
     <main class="content">
-      <comp.Terminal blink text="whoami" />
       <ul class="links">
         {contacts.map((item: { name: string; url: string }) => (
           <li>
