@@ -6,6 +6,12 @@ import minifyHTML from "lume/plugins/minify_html.ts";
 const site = lume({
   src: "src",
   location: new URL("https://gabelluardo.github.io"),
+  server: {
+    open: true,
+  },
+  watcher: {
+    debounce: 10,
+  },
 });
 
 site
