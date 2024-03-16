@@ -1,5 +1,5 @@
 ---
-layout: index.jsx
+layout: index.tsx
 ---
 
 Hi, I'm a MS Software engineering student @ [Politecnico di Torino](https://www.polito.it) and the former head of

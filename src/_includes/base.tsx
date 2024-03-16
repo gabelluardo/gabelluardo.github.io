@@ -1,4 +1,4 @@
-export default ({ info, children }) => (
+export default ({ info, children }: Lume.Data) => (
   <html lang="en">
     <head>
       <meta charset="UTF-8" />

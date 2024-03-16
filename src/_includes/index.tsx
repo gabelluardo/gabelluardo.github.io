@@ -1,11 +1,17 @@
-export const layout = "base.jsx";
+export const layout = "base.tsx";
 
-export default ({ contacts, interests, projects, children, comp }) => (
+export default ({
+  contacts,
+  interests,
+  projects,
+  children,
+  comp,
+}: Lume.Data) => (
   <>
     <main class="content">
       <comp.Terminal blink text="whoami" />
       <ul class="links">
-        {contacts.map((item) => (
+        {contacts.map((item: { name: string; url: string }) => (
           <li>
             <a class="contact-link" href={item.url}>
               {item.name}
@@ -19,7 +25,7 @@ export default ({ contacts, interests, projects, children, comp }) => (
       <comp.Terminal text="cat interests.md" />
       <h3># Interests</h3>
       <ul>
-        {interests.map((item) => (
+        {interests.map((item: string) => (
           <li>{item}</li>
         ))}
       </ul>
@@ -27,7 +33,7 @@ export default ({ contacts, interests, projects, children, comp }) => (
       <comp.Terminal text="cat projects.md" />
       <h3 style={{ backgroundColor: "#bf616a" }}># Projects</h3>
       <ul>
-        {projects.map((item) => (
+        {projects.map((item: { name: string; url: string }) => (
           <li>
             <a class="project-link" href={item.url}>
               {item.name}
