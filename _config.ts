@@ -2,13 +2,12 @@ import lume from "lume/mod.ts";
 import jsx from "lume/plugins/jsx_preact.ts";
 import sass from "lume/plugins/sass.ts";
 import minifyHTML from "lume/plugins/minify_html.ts";
+import mdx from "lume/plugins/mdx.ts";
 
 const site = lume({
   src: "src",
   location: new URL("https://gabelluardo.github.io"),
-  server: {
-    open: true,
-  },
+  prettyUrls: true,
   watcher: {
     debounce: 10,
   },
@@ -16,6 +15,7 @@ const site = lume({
 
 site
   .use(jsx())
+  .use(mdx())
   .use(sass())
   .use(minifyHTML());
 

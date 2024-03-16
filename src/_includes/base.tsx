@@ -12,7 +12,7 @@ export default ({ info, children }: Lume.Data) => (
       <meta name="description" content="Personal website" />
 
       {/* Style */}
-      <link rel="stylesheet" href="main.css" />
+      <link rel="stylesheet" href="/main.css" />
 
       {/* Goatcounter */}
       <script

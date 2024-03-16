@@ -42,6 +42,7 @@ export default ({
         ))}
       </ul>
     </main>
+
     <footer>
       This site was styled with the&nbsp;
       <a href="https://github.com/nordtheme">Nord theme</a>
