@@ -13,7 +13,7 @@ site
   .use(sass())
   .use(minifyHTML());
 
-site.copy("public", ".");
+site.copy("static", ".");
 
 // tranform all links to open in a new tab
 site.process([".html"], (pages) => {
