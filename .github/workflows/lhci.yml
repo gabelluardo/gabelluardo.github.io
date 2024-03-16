@@ -22,7 +22,7 @@ jobs:
         run: deno task build
 
       - name: Audit URLs using Lighthouse
-        uses: treosh/lighthouse-ci-action@v9
+        uses: treosh/lighthouse-ci-action@v11
         with:
           configPath: "./lighthouserc.yml"
           temporaryPublicStorage: true
