@@ -1,4 +1,6 @@
-export default ({ info, children }: Lume.Data) => (
+import { getCurrentVersion } from "lume/core/utils/lume_version.ts";
+
+export default ({ info, children }: Lume.Data, site: Lume.Site) => (
   <html lang="en">
     <head>
       <meta charset="UTF-8" />
@@ -7,7 +9,7 @@ export default ({ info, children }: Lume.Data) => (
       <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
       <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       <link rel="manifest" href="/site.webmanifest" />
-      <meta name="generator" content={info.generator} />
+      <meta name="generator" content={`🔥lume ${getCurrentVersion()}`} />
 
       <meta http-equiv="content-type" content="text/html; charset=utf-8" />
       <meta name="robots" content="noodp" />
