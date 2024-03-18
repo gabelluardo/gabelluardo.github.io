@@ -1,6 +1,7 @@
 import lume from "lume/mod.ts";
 import mdx from "lume/plugins/mdx.ts";
 import sass from "lume/plugins/sass.ts";
+import robots from "lume/plugins/robots.ts";
 import jsx from "lume/plugins/jsx_preact.ts";
 import favicon from "lume/plugins/favicon.ts";
 import minifyHTML from "lume/plugins/minify_html.ts";
@@ -21,7 +22,12 @@ site
   .use(sass())
   .use(favicon())
   .use(minifyHTML())
-  .use(lightningCss());
+  .use(lightningCss())
+  .use(
+    robots(
+      { allow: ["Googlebot", "Bingbot", "DuckDuckBot"], disallow: ["*"] },
+    ),
+  );
 
 site.copy("site.webmanifest");
 

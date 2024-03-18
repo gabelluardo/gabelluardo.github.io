@@ -1,6 +1,6 @@
 import { getCurrentVersion } from "lume/core/utils/lume_version.ts";
 
-export default ({ info, children }: Lume.Data, site: Lume.Site) => (
+export default ({ info, children }: Lume.Data) => (
   <html lang="en">
     <head>
       <meta charset="UTF-8" />
