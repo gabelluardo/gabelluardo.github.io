@@ -1,6 +1,7 @@
 import lume from "lume/mod.ts";
 import mdx from "lume/plugins/mdx.ts";
 import sass from "lume/plugins/sass.ts";
+import metas from "lume/plugins/metas.ts";
 import robots from "lume/plugins/robots.ts";
 import jsx from "lume/plugins/jsx_preact.ts";
 import favicon from "lume/plugins/favicon.ts";
@@ -20,6 +21,7 @@ site
   .use(jsx())
   .use(mdx())
   .use(sass())
+  .use(metas())
   .use(favicon())
   .use(minifyHTML())
   .use(lightningCss())

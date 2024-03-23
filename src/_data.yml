@@ -1,8 +1,11 @@
-# Site data
-layout: base.tsx
-info:
+metas:
+  robots: nohop
+  generator: true
   site: gabelluardo
   author: Gabriele Belluardo
+  description: Personal website
+
+layout: base.tsx
 
 # Content data
 contacts:
