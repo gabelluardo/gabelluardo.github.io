@@ -17,11 +17,10 @@ export default ({ metas, children }: Lume.Data) => (
       {/* Goatcounter */}
       <script
         async
-        type="text/partytown"
         src="//gc.zgo.at/count.js"
         data-goatcounter="https://gabelluardo.goatcounter.com/count"
-      ></script>
-      <title>{metas!.site}</title>
+      />
+      <title>{metas?.site}</title>
     </head>
 
     <body>{children}</body>
