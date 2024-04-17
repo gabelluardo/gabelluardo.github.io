@@ -35,14 +35,14 @@ site.copy("site.webmanifest");
 
 // tranform all links to open in a new tab
 site.process([".html"], (pages) => {
-  pages.forEach((page) => {
-    const document = page.document!;
+  for (const page of pages) {
+    const document = page.document || page.data.document;
 
-    document.querySelectorAll('a[href^="http"]').forEach((link) => {
+    for (const link of document.querySelectorAll('a[href^="http"]')) {
       link.setAttribute("target", "_blank");
       link.setAttribute("rel", "noreferer noopener");
-    });
-  });
+    }
+  }
 });
 
 export default site;
