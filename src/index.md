@@ -11,7 +11,8 @@ I like creating stuff and release it open source, but also
 contributing to other project for improving the open source
 ecosistem. I enjoy hacking and making with MCUs and I really
 love learning new technologies for making and hacking more.
-I'm driven by curiosity and have a deep passion for research, constantly pushing the boundaries of computer science.
+I'm driven by curiosity and have a deep passion for research,
+constantly pushing the boundaries of computer science.
 
 I've recently completed my master degree with a
 [thesis](https://github.com/gabelluardo/tesi) about Rust and Vulkan for [GPGPU](https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units)

@@ -12,7 +12,7 @@ export default ({
     <main class="content">
       <ul class="links">
         {contacts.map((item: { name: string; url: string }) => (
-          <li>
+          <li key={item.name}>
             <a class="contact-link" href={item.url}>
               {item.name}
             </a>
@@ -26,7 +26,7 @@ export default ({
       <h3># Interests</h3>
       <ul>
         {interests.map((item: string) => (
-          <li>{item}</li>
+          <li key={item}>{item}</li>
         ))}
       </ul>
 
@@ -34,7 +34,7 @@ export default ({
       <h3 style={{ backgroundColor: "#bf616a" }}># Projects</h3>
       <ul>
         {projects.map((item: { name: string; url: string }) => (
-          <li>
+          <li key={item.name}>
             <a class="project-link" href={item.url}>
               {item.name}
             </a>
