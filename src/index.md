@@ -21,4 +21,4 @@ and [Deno](https://deno.com). My dream is to publish
 my first indie game with [Godot](https://godotengine.org).
 
 I'm currently building robots at the cleantech startup [Reiwa Engine](https://www.reiwaengine.com/),
-in order to _[make the world a better place](https://www.youtube.com/watch?v=B8C5sjjhsso)_
+in order to _[make the world a better place](https://www.youtube.com/watch?v=B8C5sjjhsso)_.
