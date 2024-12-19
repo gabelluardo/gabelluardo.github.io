@@ -25,9 +25,7 @@ export default ({
       <comp.Terminal text="cat interests.md" />
       <h3># Interests</h3>
       <ul>
-        {interests.map((item: string) => (
-          <li key={item}>{item}</li>
-        ))}
+        {interests.map((item: string) => <li key={item}>{format(item)}</li>)}
       </ul>
 
       <comp.Terminal text="cat projects.md" />
@@ -44,8 +42,23 @@ export default ({
     </main>
 
     <footer>
-      This site was styled with the&nbsp;
+      Styled with the&nbsp;
       <a href="https://github.com/nordtheme">Nord theme</a>
     </footer>
   </>
 );
+
+function format(s: string) {
+  if (!s.includes("&&")) {
+    return s;
+  }
+
+  const parts = s.split("&&");
+
+  return parts.map((part, index) => (
+    <span key={part.trim()}>
+      {part.trim()}
+      {index < parts.length - 1 && <span style={{ color: "#bf616a" }}>&&</span>}
+    </span>
+  ));
+}

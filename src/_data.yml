@@ -17,11 +17,10 @@ contacts:
     url: /cv/cv.pdf
 
 interests:
-  - linux
-  - open source
-  - programming languages
-  - backend development
-  - game development
+  - linux && open source
+  - low-level systems
+  - web applications
+  - gaming && game development
 
 projects:
   # team
@@ -29,13 +28,9 @@ projects:
     url: https://github.com/policumbent/susi
   - name: bob
     url: https://github.com/policumbent/bob
-  - name: alice
-    url: https://github.com/policumbent/alice
 
   # politecnico
   - name: recs
     url: https://github.com/pds-project-2021/recs
   - name: spg
     url: https://github.com/ISS-P06/Solidarity-Purchasing-Group
-  - name: questionario-aw1
-    url: https://github.com/gabelluardo/questionario-aw1
