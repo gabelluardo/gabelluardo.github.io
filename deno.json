@@ -3,7 +3,8 @@
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
     "build": "deno task lume",
     "dev": "deno task lume -sw",
-    "serve": "deno task lume -so"
+    "serve": "deno task lume -so",
+    "ok": "deno lint && deno fmt"
   },
   "compilerOptions": {
     "jsx": "react-jsx",
@@ -13,6 +14,6 @@
     ]
   },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v2.3.3/"
+    "lume/": "https://deno.land/x/lume@v2.4.3/"
   }
 }
