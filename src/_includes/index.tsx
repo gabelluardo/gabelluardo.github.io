@@ -19,15 +19,12 @@ export default ({
           </li>
         ))}
       </ul>
-
       {children}
-
       <comp.Terminal text="cat interests.md" />
       <h3># Interests</h3>
       <ul>
         {interests.map((item: string) => <li key={item}>{format(item)}</li>)}
       </ul>
-
       <comp.Terminal text="cat projects.md" />
       <h3 style={{ backgroundColor: "#bf616a" }}># Projects</h3>
       <ul>
@@ -39,12 +36,12 @@ export default ({
           </li>
         ))}
       </ul>
-    </main>
 
-    <footer>
-      Styled with the&nbsp;
-      <a href="https://github.com/nordtheme">Nord theme</a>
-    </footer>
+      <footer>
+        Styled with the&nbsp;
+        <a href="https://github.com/nordtheme">Nord theme</a>
+      </footer>
+    </main>
   </>
 );
 
