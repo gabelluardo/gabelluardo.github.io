@@ -23,7 +23,9 @@ export default ({
       <comp.Terminal text="cat interests.md" />
       <h3># Interests</h3>
       <ul>
-        {interests.map((item: string) => <li key={item}>{format(item)}</li>)}
+        {interests.map((item: string) => (
+          <li key={item}>{format(item)}</li>
+        ))}
       </ul>
       <comp.Terminal text="cat projects.md" />
       <h3 style={{ backgroundColor: "#bf616a" }}># Projects</h3>
@@ -55,7 +57,9 @@ function format(s: string) {
   return parts.map((part, index) => (
     <span key={part.trim()}>
       {part.trim()}
-      {index < parts.length - 1 && <span style={{ color: "#bf616a" }}>&&</span>}
+      {index < parts.length - 1 && (
+        <span style={{ color: "#bf616a" }}>&nbsp;&&&nbsp;</span>
+      )}
     </span>
   ));
 }
