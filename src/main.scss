@@ -18,14 +18,21 @@
   font-family: "IBM Plex Mono Medium", monospace;
   font-weight: 500;
   color: var(--text);
+  scrollbar-width: thin;
+  scrollbar-color: var(--url) var(--background);
 }
 
 body {
-  min-height: 95vh;
+  min-height: 98.5vh;
   padding-left: 0.1rem;
   display: flex;
   flex-direction: column;
   font-size: 1rem;
+}
+
+footer {
+  margin-top: auto;
+  color: var(--text-background);
 }
 
 h3 {
@@ -41,21 +48,9 @@ a {
   color: var(--url);
   text-decoration: none;
 }
+
 a:hover {
   color: var(--header);
-}
-
-footer {
-  color: var(--text-background);
-  margin-top: auto;
-}
-
-/* Scrollbar */
-
-/* Works on Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: var(--url) var(--background);
 }
 
 /* Works on Chrome, Edge, and Safari */

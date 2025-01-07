@@ -38,12 +38,11 @@ export default ({
           </li>
         ))}
       </ul>
-
-      <footer>
-        Styled with the&nbsp;
-        <a href="https://github.com/nordtheme">Nord theme</a>
-      </footer>
     </main>
+    <footer class="content">
+      Styled with the&nbsp;
+      <a href="https://github.com/nordtheme">Nord theme</a>
+    </footer>
   </>
 );
 
