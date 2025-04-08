@@ -1,6 +1,7 @@
 # build output
 _site
 _cache
+deno.lock
 
 
 # environment variables
