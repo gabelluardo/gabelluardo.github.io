@@ -57,7 +57,7 @@ export default ({
 
 function format(s: string) {
   if (!s.includes("&&")) {
-    return s;
+    return <span>{s}</span>;
   }
 
   const parts = s.split("&&");
