@@ -3,13 +3,14 @@
   --text: #e5e9f0;
   --text-secondary: #a3be8c;
   --text-background: #d8dee9;
-  --url: #81a1c1;
+  --link: #81a1c1;
   --background: #2e3440;
   --header: #b48ead;
+  --alt-link: #d08770;
 }
 
 ::selection {
-  background: var(--url);
+  background: var(--link);
   color: var(--background);
 }
 
@@ -19,7 +20,7 @@
   font-weight: 500;
   color: var(--text);
   scrollbar-width: thin;
-  scrollbar-color: var(--url) var(--background);
+  scrollbar-color: var(--link) var(--background);
 }
 
 body {
@@ -45,7 +46,7 @@ h3 {
 }
 
 a {
-  color: var(--url);
+  color: var(--link);
   text-decoration: none;
 }
 
@@ -63,7 +64,7 @@ a:hover {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--url);
+  background-color: var(--link);
   border-radius: 20px;
   border: 3px solid var(--background);
 }
@@ -84,12 +85,30 @@ a:hover {
   animation: fade 1.8s;
 }
 
-.contact-link:hover {
-  color: #d08770;
+.project:hover {
+  color: var(--alt-link);
 }
 
-.project-link:hover {
-  color: #1a8cd8;
+.no-link {
+  color: var(--text);
+  margin-right: 2ch;
+
+  &:hover {
+    color: var(--text);
+  }
+}
+
+.contact {
+  color: var(--link);
+  margin-right: 2ch;
+
+  &:hover {
+    color: var(--alt-link);
+  }
+}
+
+.ls-output {
+  margin: 1rem 0;
 }
 
 /* 404 page */
@@ -109,14 +128,18 @@ a:hover {
 /* terminal component */
 
 .typeme {
-  animation: typing 0.8s steps(25), blink 0.5s step-end infinite alternate;
+  animation: typing 0.9s steps(25);
   white-space: nowrap;
   overflow: hidden;
-  border-right: 10px solid var(--url);
+}
+
+.blink {
+  animation: blink 0.8s step-end infinite alternate;
+  border-right: 10px solid var(--link);
 }
 
 .cursor {
-  color: var(--url);
+  color: var(--link);
 }
 
 @keyframes typing {

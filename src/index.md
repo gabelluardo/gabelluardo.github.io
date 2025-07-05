@@ -9,7 +9,7 @@ where we built the
 human-powered bike
 [in the world](https://www.lastampa.it/cuneo/2024/09/14/news/il_campione_paralimpico_diego_colombari_e_il_record_mondiale_di_velocita_in_nevada-14631143/).
 
-I enjoy hacking and making with MCUs, and I really love learning new technologies
+I enjoy hacking and making all kinds of things, and I really love learning new technologies
 to enhance my making and hacking skills. I'm driven by curiosity and have a deep passion for
 research and open source, constantly pushing the boundaries of computer
 engineering.
@@ -17,10 +17,11 @@ engineering.
 I've completed my master's degree with a
 [thesis](https://github.com/gabelluardo/tesi) about Rust and Vulkan for
 [GPGPU](https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units)
-programming, but I'm also into web development with TypeScript and
-[Deno](https://deno.com), as well as system development with Rust and C++. My dream is
+programming, but I'm also into web development with [Deno](https://deno.com) and recently Go, as well as systems development with Rust and C++. My dream is
 to publish my first indie game with [Godot](https://godotengine.org).
 
-<!-- I'm currently building robots for the cleantech startup
+I built robots and rovers for the cleantech startup
 [Reiwa Engine](https://www.reiwaengine.com/), in order to
-_[make the world a better place](https://www.youtube.com/watch?v=B8C5sjjhsso)_. -->
+_[make the world a better place](https://www.youtube.com/watch?v=B8C5sjjhsso)_.
+
+<!-- Currently, I work at [Canonical](https://canonical.com/) on projects related to Ubuntu desktop. -->

@@ -9,11 +9,15 @@ layout: base.tsx
 
 # Content data
 contacts:
-  - name: Github
+  # only for ui purpose
+  - name: .
+  - name: ..
+
+  - name: .github
     url: https://github.com/gabelluardo
-  - name: Linkedin
+  - name: linkedin
     url: https://www.linkedin.com/in/gabriele-belluardo-10585b200/
-  - name: CV
+  - name: cv
     url: /cv/cv.pdf
 
 interests:

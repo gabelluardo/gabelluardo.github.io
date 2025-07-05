@@ -8,37 +8,46 @@ export default ({
   comp,
 }: Lume.Data) => (
   <>
-    <comp.Terminal blink text="whoami" />
+    {/* Outsize becaouse of the typeme classs */}
+    <comp.Terminal text="ls -aa contacts" />
+
     <main class="content">
-      <ul class="links">
-        {contacts.map((item: { name: string; url: string }) => (
-          <li key={item.name}>
-            <a class="contact-link" href={item.url}>
-              {item.name}
-            </a>
-          </li>
+      <div class="ls-output">
+        {contacts.map((
+          item: { name: string; url?: string },
+        ) => (
+          <a
+            key={item.name}
+            class={item.url ? "contact" : "no-link"}
+            href={item.url}
+          >
+            {item.name}
+          </a>
         ))}
-      </ul>
+      </div>
+
+      <comp.Terminal blink text="whoami" />
       {children}
+
       <comp.Terminal text="cat interests.md" />
       <h3># Interests</h3>
       <ul>
-        {interests.map((item: string) => (
-          <li key={item}>{format(item)}</li>
-        ))}
+        {interests.map((item: string) => <li key={item}>{format(item)}</li>)}
       </ul>
+
       <comp.Terminal text="cat projects.md" />
-      <h3 style={{ backgroundColor: "#bf616a" }}># Projects</h3>
+      <h3># Projects</h3>
       <ul>
         {projects.map((item: { name: string; url: string }) => (
           <li key={item.name}>
-            <a class="project-link" href={item.url}>
+            <a class="project" href={item.url}>
               {item.name}
             </a>
           </li>
         ))}
       </ul>
     </main>
+
     <footer class="content">
       Styled with the&nbsp;
       <a href="https://github.com/nordtheme">Nord theme</a>
