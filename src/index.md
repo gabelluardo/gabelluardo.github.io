@@ -20,8 +20,8 @@ I've completed my master's degree with a
 programming, but I'm also into web development with [Deno](https://deno.com) and recently Go, as well as systems development with Rust and C++. My dream is
 to publish my first indie game with [Godot](https://godotengine.org).
 
-I built robots and rovers for the cleantech startup
+<!-- I built robots and rovers for the cleantech startup
 [Reiwa Engine](https://www.reiwaengine.com/), in order to
-_[make the world a better place](https://www.youtube.com/watch?v=B8C5sjjhsso)_.
+_[make the world a better place](https://www.youtube.com/watch?v=B8C5sjjhsso)_. -->
 
-<!-- Currently, I work at [Canonical](https://canonical.com/) on projects related to Ubuntu desktop. -->
+Currently, I'm working at [Canonical](https://canonical.com/) as a Software Engineer on [Ubuntu Desktop](https://ubuntu.com/desktop), contributing to one of the world's most popular Linux distributions.
