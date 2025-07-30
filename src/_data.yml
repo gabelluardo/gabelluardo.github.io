@@ -17,6 +17,8 @@ contacts:
     url: https://github.com/gabelluardo
   - name: linkedin
     url: https://www.linkedin.com/in/gabriele-belluardo-10585b200/
+  - name: mastodon
+    url: https://hachyderm.io/@gabelluardo
   - name: cv
     url: /cv/cv.pdf
 

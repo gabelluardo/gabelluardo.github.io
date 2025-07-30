@@ -47,7 +47,7 @@ site.process([".html"], (pages) => {
 
     for (const link of document.querySelectorAll('a[href^="http"]')) {
       link.setAttribute("target", "_blank");
-      link.setAttribute("rel", "noreferer noopener");
+      link.setAttribute("rel", "me noreferer noopener");
     }
   }
 });
