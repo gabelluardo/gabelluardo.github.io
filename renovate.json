@@ -19,8 +19,9 @@
       "automerge": true
     }
   ],
-  "prTitle": "chore(deps): {{semanticPrefix}}{{#if isPin}}pin{{else}}update{{/if}} {{depName}} {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}to v{{newMajor}}{{else}}{{#if isSingleVersion}}to {{newVersion}}{{else}}{{newValue}}{{/if}}{{/if}}{{/if}}",
   "commitMessagePrefix": "chore(deps): ",
+  "commitMessageTopic": "{{#if isPin}}pin{{else}}update{{/if}} {{depName}}",
+  "commitMessageExtra": "{{#if isPinDigest}}to {{{newDigestShort}}}{{else}}{{#if isMajor}}to v{{newMajor}}{{else}}{{#if isSingleVersion}}to {{newVersion}}{{else}}{{newValue}}{{/if}}{{/if}}{{/if}}",
   "labels": [
     "dependencies"
   ]
