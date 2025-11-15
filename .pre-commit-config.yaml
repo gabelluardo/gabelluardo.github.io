@@ -1,0 +1,15 @@
+repos:
+  - repo: local
+    hooks:
+      - id: deno-fmt
+        name: Deno format
+        entry: deno fmt
+        language: system
+        pass_filenames: false
+        files: \.(ts|tsx|md|mdx)$
+      - id: deno-check
+        name: Deno format, lint and type check
+        entry: deno task ok
+        language: system
+        pass_filenames: false
+        files: \.(ts|tsx|md|mdx)$
