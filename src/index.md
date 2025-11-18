@@ -18,7 +18,7 @@ programming. I'm also into web development, mainly with
 hope to publish my first indie game using [Godot](https://godotengine.org).
 
 I enjoy hacking and building smart, 3D-printed ~~useless~~ gadgets with the
-Raspberry Pi Pico and ESP32. I’m passionate about research and open source, and
+Raspberry Pi Pico and ESP32. I'm passionate about research and open source, and
 I constantly explore new technologies and domains from a human-centric
 perspective.
 
