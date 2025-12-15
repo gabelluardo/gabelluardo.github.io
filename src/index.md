@@ -14,7 +14,7 @@ I've completed my master's degree with a
 [thesis](https://github.com/gabelluardo/tesi) about Rust, CUDA and Vulkan for
 [GPGPU](https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units)
 programming. I'm also into web development, mainly with
-[Deno](https://deno.com), as well as systems programming with Rust and Go. I
+[Deno](https://deno.com), as well as system programming with Rust and Go. I
 hope to publish my first indie game using [Godot](https://godotengine.org).
 
 I enjoy hacking and building smart, 3D-printed ~~useless~~ gadgets with the
