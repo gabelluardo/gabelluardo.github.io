@@ -35,8 +35,10 @@ projects:
   - name: bob
     url: https://github.com/policumbent/bob
 
-  # politecnico
-  - name: recs
-    url: https://github.com/pds-project-2021/recs
-  - name: spg
-    url: https://github.com/ISS-P06/Solidarity-Purchasing-Group
+  # personal
+  - name: itertools
+    url: https://github.com/gabelluardo/itertools
+
+  # canonical
+  - name: tpmctl
+    url: https://github.com/canonical/snap-tpmctl
