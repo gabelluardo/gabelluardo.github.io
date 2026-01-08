@@ -17,7 +17,7 @@ programming. I'm also into web development, mainly with
 [Deno](https://deno.com), as well as system programming with Rust and Go. I hope
 to publish my first indie game using [Godot](https://godotengine.org).
 
-I enjoy hacking and building smart, 3D-printed ~~useless~~ gadgets with the
+I enjoy hacking and building smart 3D-printed ~~useless~~ gadgets with some
 Raspberry Pi Pico and ESP32. I'm passionate about research and open source, and
 I constantly explore new technologies and domains from a human-centric
 perspective.
