@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>404 Not Found | gabelluardo</title>
-    {{ $styles := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint "sha256" }}
-    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" />
-</head>
+{{ define "main" }}
 
 <body>
     <div class="error-404">
@@ -15,4 +6,4 @@
     </div>
 </body>
 
-</html>
+{{ end }}
