@@ -1,6 +1,6 @@
 ci:
   collect:
-    staticDistDir: ./_site
+    staticDistDir: ./public
     settings:
       skipAudits: [is-on-https]
       chromeFlags: "--no-sandbox --disable-dev-shm-usage"
