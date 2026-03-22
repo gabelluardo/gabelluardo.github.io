@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>404 Not Found | gabelluardo</title>
-    <link rel="stylesheet" href="/css/main.css" />
+    {{ $styles := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint "sha256" }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" />
 </head>
 
 <body>
