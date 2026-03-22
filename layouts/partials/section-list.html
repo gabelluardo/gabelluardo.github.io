@@ -1,0 +1,18 @@
+<section>
+    {{ partial "terminal.html" (dict "command" (printf "cat %s.md" (lower .title))) }}
+
+    <h2># {{ .title }}</h2>
+    <ul>
+        {{ if in .title "Projects" }}
+        {{ range .items }}
+        <li>
+            <a class="project" href="{{ .url }}">{{ .name }}</a>
+        </li>
+        {{ end }}
+        {{ else }}
+        {{ range .items }}
+        <li>{{ . }}</li>
+        {{ end }}
+        {{ end }}
+    </ul>
+</section>

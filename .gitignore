@@ -2,7 +2,7 @@
 _site
 _cache
 deno.lock
-
+public
 
 # environment variables
 .env

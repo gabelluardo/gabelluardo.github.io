@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{ partial "terminal.html" (dict "command" "ls -aa contacts") }}
+<main class="content">
+    {{ partial "contacts.html" .Site.Data.data.contacts }}
+
+    {{ partial "terminal.html" (dict "command" "whoami" "blink" true) }}
+    <article>
+        {{ .Content }}
+    </article>
+
+    {{ partial "section-list.html" (dict "title" "Interests" "items" .Site.Data.data.interests) }}
+    {{ partial "section-list.html" (dict "title" "Projects" "items" .Site.Data.data.projects) }}
+</main>
+<footer class="content">
+    Styled with the <a href="https://github.com/nordtheme">Nord theme</a>
+</footer>
+{{ end }}

@@ -1,18 +1,4 @@
-metas:
-  robots: nohop
-  generator: true
-  site: gabelluardo
-  author: Gabriele Belluardo
-  description: Personal website
-
-layout: base.tsx
-
-# Content data
 contacts:
-  # only for ui purpose
-  - name: .
-  - name: ..
-
   - name: .github
     url: https://github.com/gabelluardo
   - name: linkedin
@@ -23,22 +9,17 @@ contacts:
   #   url: /cv/cv.pdf
 
 interests:
-  - linux && open source
+  - Linux && open source
   - low-level systems
   - web applications
   - gaming && game development
 
 projects:
-  # team
   - name: susi
     url: https://github.com/policumbent/susi
   - name: bob
     url: https://github.com/policumbent/bob
-
-  # personal
   - name: itertools
     url: https://github.com/gabelluardo/itertools
-
-  # canonical
   - name: tpmctl
     url: https://github.com/canonical/snap-tpmctl
