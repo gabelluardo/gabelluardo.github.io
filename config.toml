@@ -3,6 +3,8 @@ languageCode = "en-us"
 title = "gabelluardo"
 publishDir = "public"
 
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
 [params]
 author = "Gabriele Belluardo"
 description = "Personal website"
