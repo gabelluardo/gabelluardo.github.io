@@ -1,8 +1,6 @@
 # build output
-_site
-_cache
-deno.lock
-
+public
+resources
 
 # environment variables
 .env

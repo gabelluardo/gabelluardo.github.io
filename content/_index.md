@@ -1,5 +1,5 @@
 ---
-layout: index.tsx
+title: "Home"
 ---
 
 Hi, I'm a Computer Engineer from [Politecnico di Torino](https://www.polito.it),
