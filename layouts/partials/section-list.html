@@ -6,7 +6,7 @@
         {{ if in .title "Projects" }}
         {{ range .items }}
         <li>
-            <a class="project" href="{{ .url }}">{{ .name }}</a>
+            <a class="project" href="{{ .url }}" target="_blank" rel="me noreferer noopener">{{ .name }}</a>
         </li>
         {{ end }}
         {{ else }}
