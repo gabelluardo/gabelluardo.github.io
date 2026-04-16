@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1F222A" />
+    <link rel="icon" href="/favicon-64.png" />
+    <link rel="apple-touch-icon" href="/favicon-64.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    {{ $styles := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint "sha256" }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}"
+        crossorigin="anonymous" />
+
+    {{ partialCached "analytics.html" . }}
+
+    <title> {{ .Site.Title }}</title>
+</head>
+
+<body>
+    {{ block "main" . }}{{ end }}
+</body>
+
+</html>

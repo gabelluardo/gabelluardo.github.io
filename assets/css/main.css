@@ -1,0 +1,187 @@
+:root {
+  /* nord theme */
+  --text: #e5e9f0;
+  --text-secondary: #a3be8c;
+  --text-background: #d8dee9;
+  --text-danger: #bf616a;
+  --link: #81a1c1;
+  --background: #2e3440;
+  --header: #b48ead;
+  --alt-link: #d08770;
+}
+
+::selection {
+  background: var(--link);
+  color: var(--background);
+}
+
+* {
+  background: var(--background);
+  font-family: "IBM Plex Mono Medium", monospace;
+  font-weight: 500;
+  color: var(--text);
+  scrollbar-width: thin;
+  scrollbar-color: var(--link) var(--background);
+}
+
+body {
+  min-height: 98.5vh;
+  padding-left: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+footer {
+  margin-top: auto;
+  color: var(--text-background);
+}
+
+h2 {
+  display: inline-block;
+  font-size: inherit;
+  padding: 0 0.5em;
+  margin-bottom: 0;
+  background-color: var(--header);
+  color: #fafafa;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--header);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--link);
+  border-radius: 20px;
+  border: 3px solid var(--background);
+}
+
+/* Main page */
+
+.text-background {
+  color: var(--text-background);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.content {
+  width: 100%;
+  max-width: 80ch;
+  animation: fade 1.8s;
+}
+
+.project:hover {
+  color: var(--alt-link);
+}
+
+.no-link {
+  color: var(--text);
+  margin-right: 2ch;
+
+  &:hover {
+    color: var(--text);
+  }
+}
+
+.contact {
+  color: var(--link);
+  margin-right: 2ch;
+
+  &:hover {
+    color: var(--alt-link);
+  }
+}
+
+.ls-output {
+  display: flex;
+  margin: 1rem 0;
+}
+
+/* 404 page */
+
+.error-404 {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* terminal component */
+
+.typeme {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 1.2s steps(120, end) forwards;
+  max-width: 45ch;
+}
+
+.blink {
+  animation: blink 0.8s step-end infinite alternate;
+  border-right: 10px solid var(--link);
+}
+
+.cursor {
+  color: var(--link);
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 45ch;
+  }
+}
+
+/* animation */
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* dynamic resizing */
+.colored-and {
+  color: var(--text-danger)
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 1.25rem;
+  }
+}

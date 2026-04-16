@@ -1,0 +1,14 @@
+<div class="typeme">
+
+    <span class="text-secondary">{{ site.Title }}</span>
+    <span class="text-background">~</span>
+    <span class="cursor">$</span>
+
+    {{with .Content}}
+    <span>{{ . }}</span>
+    {{end}}
+
+    {{ if .Blink }}
+    <span class="blink"></span>
+    {{end}}
+</div>

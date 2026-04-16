@@ -1,0 +1,18 @@
+{{ define "main" }}
+{{ partial "terminal.html" (dict "Content" "ls -aa contacts") }}
+<main class="content">
+    {{ partial "contacts.html" (dict "Contacts" .Site.Data.data.contacts "Global" .) }}
+
+    {{ partial "terminal.html" (dict "Content" "whoami" "Blink" true) }}
+    <article>
+        {{ .Content }}
+    </article>
+
+    {{ partial "section-list.html" (dict "Title" "Interests" "Content" .Site.Data.data.interests "Global" .) }}
+    {{/* {{ partial "section-list.html" (dict "Title" "Projects" "Content" .Site.Data.data.projects "Global" .) }}
+    */}}
+</main>
+
+{{ partialCached "footer.html" . }}
+
+{{ end }}

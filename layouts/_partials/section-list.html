@@ -1,0 +1,18 @@
+<section>
+
+    {{$command := lower .Title | printf "cat %s.md" }}
+    {{ partial "terminal.html" (dict "Content" $command) }}
+
+    <h2># {{ .Title }}</h2>
+    <ul>
+        {{ range .Content }}
+        {{ if reflect.IsMap . }}
+        <li>
+            <a class="project" href="{{ .url }}" target="_blank" rel="me noreferer noopener">{{ .name }}</a>
+        </li>
+        {{ else }}
+        <li>{{ replace . "&&" "<span class=\"colored-and\">&&</span>" | safeHTML }}</li>
+        {{ end }}
+        {{ end }}
+    </ul>
+</section>

@@ -1,0 +1,5 @@
+{{/* render hook for all Markdown links*/}}
+{{- $href := .Destination | safeURL -}}
+{{- $isExternal := or (strings.HasPrefix $href "http://") (strings.HasPrefix $href "https://") -}}
+<a href="{{ $href }}" {{ if $isExternal }} target="_blank" rel="me noreferer noopener" {{ end }}>{{ .Text | safeHTML
+    }}</a>

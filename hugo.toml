@@ -1,0 +1,18 @@
+baseURL = "https://gabelluardo.github.io/"
+languageCode = "en-us"
+title = "gabelluardo"
+publishDir = "public"
+
+disableKinds = ["taxonomy"]
+
+[params]
+author = "Gabriele Belluardo"
+description = "Personal website"
+
+[outputs]
+home = ["HTML"]
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.extensions]
+typographer = false
