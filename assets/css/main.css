@@ -48,7 +48,9 @@ h2 {
 
 a {
   color: var(--link);
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
 }
 
 a:hover {
@@ -90,13 +92,8 @@ a:hover {
   color: var(--alt-link);
 }
 
-.no-link {
-  color: var(--text);
+.spaced {
   margin-right: 2ch;
-
-  &:hover {
-    color: var(--text);
-  }
 }
 
 .contact {
