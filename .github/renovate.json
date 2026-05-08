@@ -1,0 +1,47 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "config:recommended",
+        ":dependencyDashboard",
+        "group:allNonMajor"
+    ],
+    "labels": [
+        "dependencies"
+    ],
+    "timezone": "Europe/Rome",
+    "prHourlyLimit": 2,
+    "prConcurrentLimit": 5,
+    "platformAutomerge": true,
+    "ignorePaths": [
+        "public/**"
+    ],
+    "packageRules": [
+        {
+            "matchManagers": [
+                "github-actions"
+            ],
+            "groupName": "github-actions"
+        },
+        {
+            "matchManagers": [
+                "pre-commit"
+            ],
+            "groupName": "pre-commit"
+        },
+        {
+            "matchUpdateTypes": [
+                "minor",
+                "major"
+            ],
+            "automerge": true
+        },
+        {
+            "matchUpdateTypes": [
+                "patch",
+                "pin",
+                "digest"
+            ],
+            "enabled": false
+        }
+    ]
+}
