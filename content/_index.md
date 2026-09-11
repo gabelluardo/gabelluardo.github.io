@@ -26,6 +26,6 @@ constantly explore new technologies and domains from a human-centric
 perspective.
 
 I also ended up building robots and rovers for the cleantech startup
-[Reiwa Engine](https://www.reiwaengine.com/) in order to
+[Reiwa Engine](https://www.linkedin.com/company/reiwa-engine/) in order to
 _[make the world a better place](https://www.youtube.com/watch?v=B8C5sjjhsso)_
 from my Sicilian hometown.
